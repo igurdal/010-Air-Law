@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+  <title>Quiz App</title>
+  <link rel="apple-touch-icon" href="path-to-icon.png">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="quiz-container">
+    <div id="quiz">
+      <div id="question-container" class="hide">
+          <!--  <div id="timer">Time Left: <span id="time">10</span> seconds</div>-->
+          <div id="progress-container" style="width: 100%; background-color: #ddd; height: 10px; margin-top: 10px;">
+            <div id="progress-bar" style="width: 0%; background-color: cyan; height: 100%;"></div>
+          </div>
+          <p id="progress-text">Question 1 of X</p>
+        <div id="question">Question text</div>
+        <div id="answer-buttons" class="btn-container"></div>
+      </div>
+      <div class="controls">
+        <button id="start-btn" class="start-btn btn">010-Air Law</button>
+        <div id="password-container" class="hide">
+          <input type="password" id="quiz-password" placeholder="Enter password" />
+          <button id="submit-password-btn" class="btn">Submit Password</button>
+        </div>
+        <button id="next-btn" class="next-btn btn hide">Next</button>
+      </div>
+    </div>
+
+    <div id="score-container" class="hide">
+      <div id="student-info">
+        <input type="text" id="student-name" placeholder="Enter your name" />
+        <input type="text" id="student-surname" placeholder="Enter your surname" />
+      </div>
+      <div id="score"></div> <!-- Placeholder for score -->
+      <button id="save-btn" class="btn">Save Results</button>
+      <button id="send-btn" class="btn">Send Results</button>
+      <button id="restart-btn" class="btn">Restart Quiz</button>
+    </div>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>

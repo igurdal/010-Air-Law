@@ -1,0 +1,165 @@
+body {
+  font-family: 'Arial', sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-color: #f4f4f4;
+  margin: 0;
+  overflow-y: scroll; /* Ensure the page scrolls if necessary */
+  margin: 0;
+  padding: 0;
+  padding-top: env(safe-area-inset-top); /* Adds padding for the notch area */
+  padding-bottom: env(safe-area-inset-bottom); /* Adds padding for the bottom */
+  overflow-x: hidden; /* Prevent horizontal scrolling */
+}
+
+.quiz-container {
+  width: 600px;
+  background-color: moccasin;
+  border: 1px solid black;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+}
+
+.btn-container {
+  display: flex;
+  flex-direction: column;
+}
+
+.btn {
+  background-color: whitesmoke;/*#0000EE; /* Link blue color */
+  color: black;
+  border: 1px solid black;
+  padding: 10px;
+  margin-top: 10px;
+  cursor: pointer;
+  font-size: 16px;
+  text-decoration: none; /* Ensures the button text doesn't look underlined */
+  min-height: 44px; /* The minimum recommended touch target height */
+  padding: 12px;
+  border-radius: 5px;
+}
+
+.btn:hover {
+  background-color: lightgray; /* Darker blue (used for visited links) */
+}
+
+.start-btn {
+  display: block;
+  margin: 0 auto; /* Centers the button horizontally */
+  background-color: lightblue;
+  color: black;
+  padding: 10px;
+  font-size: 16px;
+  border-radius: 5px;
+  text-align: center; /* Ensures text is centered */
+}
+
+.hide {
+  display: none;
+}
+
+.correct {
+  background-color: lightgreen;
+  color: white;
+}
+
+.wrong {
+  background-color: lightcoral;
+  color: white;
+}
+
+.controls {
+  display: flex;
+  justify-content: space-between;
+}
+
+#timer {
+  font-size: 18px;
+  margin-bottom: 10px;
+}
+.selected {
+  background-color: #f0ad4e; /* Highlight color (orange) */
+  color: white;
+  border-radius: 5px;
+}
+#progress-container {
+  width: 100%;
+  background-color: #e0e0e0; /* Light grey background for the progress bar */
+  height: 5px; /* Thinner progress bar */
+  margin-top: 10px; /* Space between timer and progress bar */
+  border-radius: 5px;
+}
+
+#progress-bar {
+  width: 0%; /* Initially set to 0% */
+  background-color: cyan; /* Cyan color for the progress bar */
+  height: 100%; /* Ensure the progress bar takes up the full height */
+  border-radius: 5px;
+}
+#quiz-password {
+  width: 100%;
+  padding: 10px;
+  margin-top: 10px;
+  font-size: 16px;
+  border: 1px solid black;
+  border-radius: 5px;
+}
+#progress-text {
+  text-align: center;
+  margin-top: 10px;
+  font-size: 18px;
+  font-weight: bold;
+}
+#score-container {
+  max-height: 600px; /* Set a maximum height based on your design */
+  overflow-y: auto; /* Allow vertical scrolling */
+  padding: 10px; /* Add some padding for a neat look */
+  margin-top: 20px; /* Add space between elements */
+}
+#submit-password-btn {
+  background-color: lightblue;
+  color: black;
+  padding: 10px;
+  font-size: 16px;
+  border: 1px solid black;;
+  border-radius: 5px; /* Adds the border radius */
+  cursor: pointer;
+}
+
+#submit-password-btn:hover {
+  background-color: lightcyan; /* Darker color on hover */
+}
+button {
+  user-select: none;
+  touch-action: manipulation; /* Optimize for touch interaction */
+}
+input, button {
+  font-size: 16px;
+}
+@media (max-width: 480px) {
+  .quiz-container {
+    padding: 10px; /* Reduce padding for smaller screens */
+    width: 90%; /* Change to a percentage for better scaling on smaller screens */
+      max-width: 600px; /* Set a max-width to avoid it becoming too large on larger screens */
+      background-color: white;
+      border-radius: 10px;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+      padding: 20px;
+  }
+  
+  .btn {
+    padding: 8px; /* Adjust button padding */
+    font-size: 14px; /* Slightly smaller font for buttons */
+  }
+
+  #progress-bar {
+    height: 3px; /* Make the progress bar thinner on small screens */
+  }
+
+  #score-container {
+    max-height: 400px; /* Reduce the max height of the score container */
+  }
+}
