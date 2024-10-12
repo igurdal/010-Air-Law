@@ -144,7 +144,7 @@ input, button {
     padding: 10px; /* Reduce padding for smaller screens */
     width: 90%; /* Change to a percentage for better scaling on smaller screens */
       max-width: 600px; /* Set a max-width to avoid it becoming too large on larger screens */
-      background-color: white;
+      background-color: moccasin;
       border-radius: 10px;
       box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
       padding: 20px;
