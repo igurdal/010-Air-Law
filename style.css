@@ -202,7 +202,7 @@ input, button {
 }
 @media (max-width: 480px) {
     #quiz-password {
-        width: 100%;
+        width: 95%;
         padding: 10px;
         margin-top: 10px;
         font-size: 14px;
