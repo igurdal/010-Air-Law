@@ -18,6 +18,7 @@ let timerInterval;
 let userChoices = []; // To store the user's choices
 let selectedAnswerText = null; // To store the last selected answer
 let correctAnswerText = null; // To store the correct answer for the current question
+let numQuestionsToSolve; // Number of questions user wants to solve
 
 const questions = [
   {
@@ -847,7 +848,519 @@ const questions = [
         { text: "to provide instructions in order to reduce separations minima, if accepted by the pilots.", correct: false },
         { text: "to apply a horizontal separation less than 5 NM.", correct: false }
       ]
-    }
+    },{
+    question: 'The primary duty provided by a radar unit is;',
+    answers: [
+      { text: 'to assist aircraft due to failure of airborne equipment.', correct: false },
+      { text: 'to assist aircraft where navigation appears unsatisfactory.', correct: false },
+      { text: 'to assist aircraft on the location of storms.', correct: false },
+      { text: 'to provide radar separation.', correct: true }
+    ]
+  },
+  {
+    question: 'When radar identification of aircraft has been achieved, ATC unit shall;',
+    answers: [
+      { text: 'inform the aircraft only if radar identification has been achieved without availability of SSR.', correct: false },
+      { text: 'inform the aircraft only if communication’s load permits it.', correct: false },
+      { text: 'not advise the aircraft before issuing instructions.', correct: false },
+      { text: 'inform the aircraft prior to issue any instructions or advice based on the use of radar.', correct: true }
+    ]
+  },
+  {
+      question: 'One of the functions ensured by a radar control unit for the provision of approach control service is;',
+      answers: [
+        { text: 'to provide instructions to reduce the separation minima.', correct: false },
+        { text: 'to apply a reduced vertical separation of 500 feet between IFR and VFR flights.', correct: false },
+        { text: 'to apply a horizontal separation less than 5 NM.', correct: false },
+        { text: 'to conduct precision radar approach (PAR).', correct: true }
+      ]
+    },
+    {
+      question: 'Except otherwise established by the appropriate ATS authority a Surveillance Radar Approach (SRA) shall be terminated at a distance from the touchdown of;',
+      answers: [
+        { text: '2 NM.', correct: true },
+        { text: '3 NM.', correct: false },
+        { text: '5 NM.', correct: false },
+        { text: '4 NM.', correct: false }
+      ]
+    },
+    {
+      question: 'When “Secondary Radar” is used, an aircraft may be identified by one of the following procedures;',
+      answers: [
+        { text: 'To request pilot to set transponder on position “OFF”.', correct: false },
+        { text: 'To request pilot to set transponder on position “ON”.', correct: false },
+        { text: 'To request pilot to switch from “ON” to “STBY”.', correct: false },
+        { text: 'Observation of compliance with an instruction to operate transponder from “ON” to “STBY” and back to “ON”.', correct: true }
+      ]
+    },
+    {
+      question: 'Where a “Secondary Surveillance Radar” (SSR) is not available, radar identification may be achieved by one of the following procedures;',
+      answers: [
+        { text: 'to instruct the pilot to execute one or more changes of 10°.', correct: false },
+        { text: 'to instruct the pilot to execute one or more changes of 20° or more.', correct: false },
+        { text: 'to instruct the pilot to execute one or more changes of 30° or more.', correct: true },
+        { text: 'to instruct the pilot to execute one or more changes of 45°.', correct: false }
+      ]
+    },
+    {
+      question: 'Which code shall be used on Mode “A” to provide recognition of an aircraft subjected to unlawful interference?',
+      answers: [
+        { text: 'Code 2000.', correct: false },
+        { text: 'Code 7600.', correct: false },
+        { text: 'Code 7700.', correct: false },
+        { text: 'Code 7500.', correct: true }
+      ]
+    },
+    {
+      question: 'Which does ATC Term “Radar contact” signify?',
+      answers: [
+        { text: 'Your aircraft has been identified on the radar display and radar flight instructions will be provided until radar identification is terminated.', correct: true },
+        { text: 'Your aircraft has been identified and you will receive separation from all aircraft while in contact with this radar facility.', correct: false },
+        { text: 'You will be given traffic advisories until advised that the service has been terminated or that radar contact has been lost.', correct: false },
+        { text: 'ATC is receiving your transponder and will furnish vectors and traffic advisories until you are advised that contact has been lost.', correct: false }
+      ]
+    },
+    {
+      question: 'What is meant when departure control instructs you to “resume own navigation” after you have been vectored to an airway?',
+      answers: [
+        { text: 'You are still in radar contact, but must make position reports.', correct: false },
+        { text: 'Advisories will no longer be issued by ATC.', correct: false },
+        { text: 'You should maintain that airway by use of your navigation equipment.', correct: true },
+        { text: 'Radar Service is terminated.', correct: false }
+      ]
+    },
+    {
+      question: 'The proficiency check of a pilot took place on the 15th of April. The validity of the previous proficiency check was the 30th of June. The period of the new proficiency check can be and can’t exceed;',
+      answers: [
+        { text: '15th of October the same year.', correct: false },
+        { text: '30th of October the same year.', correct: false },
+        { text: '30th of April the following year.', correct: false },
+        { text: '31st of December the same year.', correct: true }
+      ]
+    },
+    {
+      question: 'Abbreviations (Doc 8168). What does the abbreviation OIS mean?',
+      answers: [
+        { text: 'Obstacle in surface.', correct: false },
+        { text: 'Obstacle identification slope.', correct: false },
+        { text: 'Obstacle identification surface.', correct: true },
+        { text: 'Obstruction in surface.', correct: false }
+      ]
+    },
+    {
+      question: 'Abbreviations (Doc 8168). In Pans-Ops, the abbreviation DER stands for;',
+      answers: [
+        { text: 'Distance error in routing.', correct: false },
+        { text: 'Direct entry route.', correct: false },
+        { text: 'Displaced end of runway.', correct: false },
+        { text: 'Departure end of runway.', correct: true }
+      ]
+    },
+    {
+      question: 'Instrument Departure Procedures - Obstacle Clearance. The minimum obstacle clearance at the departure end of runway equals;',
+      answers: [
+        { text: '35 ft.', correct: false },
+        { text: '0 ft.', correct: true },
+        { text: '0.8% gradient.', correct: false },
+        { text: '3.3% gradient.', correct: false }
+      ]
+    },
+    {
+      question: 'Standard Instrument Departure Procedures - Straight Departures. A straight departure is one in which the initial departure track does not deviate from the alignment of the extended runway centre line by more than;',
+      answers: [
+        { text: '30°.', correct: false },
+        { text: '15°.', correct: true },
+        { text: '45°.', correct: false },
+        { text: '12.5°.', correct: false }
+      ]
+    },
+    {
+      question: 'Holding procedures - Offset Entry. Above 14,000 ft in still air, the outbound time on a 30° offset track is limited to;',
+      answers: [
+        { text: '2 minutes.', correct: false },
+        { text: '1 minute.', correct: false },
+        { text: '1 minute 30 seconds.', correct: true },
+        { text: '3 minutes.', correct: false }
+      ]
+    },
+    {
+      question: 'Approach segments. In an instrument approach procedure, the segment in which alignment and descent for landing are made is called;',
+      answers: [
+        { text: 'Final approach segment.', correct: true },
+        { text: 'Initial approach segment.', correct: false },
+        { text: 'Arrival segment.', correct: false },
+        { text: 'Intermediate approach segment.', correct: false }
+      ]
+    },
+    {
+      question: 'Approach procedures - Final approach segment. In a precision approach (ILS), the final approach segment begins at the;',
+      answers: [
+        { text: 'FAP.', correct: true },
+        { text: 'FAF.', correct: false },
+        { text: 'IF.', correct: false },
+        { text: 'MAP.', correct: false }
+      ]
+    },
+    {
+      question: 'Holding procedures - Entry. Related to the three entry sectors in a holding pattern, there is a zone of flexibility on either side of the sector boundaries of;',
+      answers: [
+        { text: '15°.', correct: false },
+        { text: '5°.', correct: true },
+        { text: '10°.', correct: false },
+        { text: '20°.', correct: false }
+      ]
+    },
+    {
+      question: 'Holding Procedures - Buffer Area. How far beyond the boundary of the holding area extends the buffer area?',
+      answers: [
+        { text: '5 NM.', correct: true },
+        { text: '3 NM.', correct: false },
+        { text: '5 km.', correct: false },
+        { text: '3 km.', correct: false }
+      ]
+    },
+    {
+      question: 'Altimeter setting procedures - Transition Level. The vertical position of an aircraft at or above the transition level with altimeter setting 1013.2 hPa has to be reported;',
+      answers: [
+        { text: 'as Altitude.', correct: false },
+        { text: 'as Height.', correct: false },
+        { text: 'according to pilot’s choice.', correct: false },
+        { text: 'as Flight Level.', correct: true }
+      ]
+    },
+    {
+      question: 'Altimeter setting procedures - Transition Level. With altimeter setting of 1013.2 hPa, the vertical position of an aircraft at or above the transition level has to be reported;',
+      answers: [
+        { text: 'as Altitude.', correct: false },
+        { text: 'as Height.', correct: false },
+        { text: 'according to pilot’s choice.', correct: false },
+        { text: 'as Flight Level.', correct: true }
+      ]
+    },
+    {
+      question: 'SSR - Transponder. When an aircraft carries a serviceable transponder, the pilot shall operate the transponder;',
+      answers: [
+        { text: 'at all times during flight, regardless of whether the aircraft is within or outside airspace where SSR is used for ATS purposes.', correct: true },
+        { text: 'only when the aircraft is flying within airspace where SSR is used for ATS purposes.', correct: false },
+        { text: 'only when the aircraft is flying within controlled airspace.', correct: false },
+        { text: 'only when directed by ATC.', correct: false }
+      ]
+    },
+  {
+      question: 'SSR - Transponder. When the aircraft carries a serviceable Mode C transponder, the pilot shall continuously operate this mode;',
+      answers: [
+        { text: 'regardless of ATC instructions.', correct: false },
+        { text: 'unless otherwise directed by ATC.', correct: true },
+        { text: 'only when the aircraft is flying within controlled airspace.', correct: false },
+        { text: 'only when directed by ATC.', correct: false }
+      ]
+    },
+    {
+      question: 'SSR - Transponder. When an aircraft is subjected to unlawful interference, the pilot-in-command shall indicate the situation by setting the transponder to Mode A, Code;',
+      answers: [
+        { text: '7700.', correct: false },
+        { text: '7600.', correct: false },
+        { text: '7000.', correct: false },
+        { text: '7500.', correct: true }
+      ]
+    },
+    {
+      question: 'SSR - Transponder. When acknowledging mode/code setting instructions, pilots shall;',
+      answers: [
+        { text: 'read back the mode and code to be set.', correct: true },
+        { text: 'read back the code to be set and SQUAWK IDENT.', correct: false },
+        { text: 'use the word ROGER.', correct: false },
+        { text: 'use the word WILCO.', correct: false }
+      ]
+    },
+    {
+      question: 'The longitudinal separation minima based on time between aircraft at the same cruising level where navigation aids permit frequent determination of position and speed, is;',
+      answers: [
+        { text: '3 minutes.', correct: false },
+        { text: '15 minutes.', correct: false },
+        { text: '10 minutes.', correct: true },
+        { text: '5 minutes.', correct: false }
+      ]
+    },
+    {
+      question: 'Longitudinal separation minima based on time for aircraft at the same cruising level when navigation aids permit frequent determination of position and speed provided that the preceding aircraft is maintaining a true airspeed of 20 kt or more faster than the succeeding aircraft will be;',
+      answers: [
+        { text: '2 minutes.', correct: false },
+        { text: '5 minutes.', correct: true },
+        { text: '3 minutes.', correct: false },
+        { text: '10 minutes.', correct: false }
+      ]
+    },
+    {
+      question: 'Longitudinal separation minima based on time for aircraft at the same cruising level when navigation aids permit frequent determination of position and speed provided that the preceding aircraft is maintaining a true airspeed of 40 kt or more faster than the succeeding aircraft will be;',
+      answers: [
+        { text: '2 minutes.', correct: false },
+        { text: '3 minutes.', correct: true },
+        { text: '10 minutes.', correct: false },
+        { text: '5 minutes.', correct: false }
+      ]
+    },
+    {
+      question: 'Longitudinal separation minima based on time. The minimum longitudinal separation between two aircraft flying on the same track, the preceding one maintaining a true airspeed of 37 km (20 kt) faster than the succeeding aircraft, departed from the same aerodrome or having reported exactly over the same significant point, is;',
+      answers: [
+        { text: '5 minutes.', correct: true },
+        { text: '10 minutes.', correct: false },
+        { text: '2 minutes.', correct: false },
+        { text: '3 minutes.', correct: false }
+      ]
+    },
+    {
+      question: 'Longitudinal separation minima based on time for aircraft at the same cruising level when navigation aids permit frequent determination of position and speed provided that the preceding aircraft is maintaining a true airspeed of 40 kt or more faster than the succeeding aircraft, is;',
+      answers: [
+        { text: '2 minutes.', correct: false },
+        { text: '3 minutes.', correct: true },
+        { text: '10 minutes.', correct: false },
+        { text: '5 minutes.', correct: false }
+      ]
+    },
+    {
+      question: 'When an aircraft will pass through the level of another aircraft on the same track, the following minimum longitudinal separation shall be provided;',
+      answers: [
+        { text: '5 minutes at the time the level is crossed.', correct: false },
+        { text: '20 minutes at the time the level is crossed.', correct: false },
+        { text: '15 minutes at the time the level is crossed.', correct: true },
+        { text: '10 minutes at the time the level is crossed.', correct: false }
+      ]
+    },
+    {
+      question: 'The longitudinal separation minima based on distance using DME, and each aircraft “on track” uses DME stations, is;',
+      answers: [
+        { text: '20 NM when the leading aircraft maintains a true airspeed of 20 kt or more faster than the succeeding aircraft.', correct: false },
+        { text: '5 NM.', correct: false },
+        { text: '20 NM.', correct: true },
+        { text: '10 NM.', correct: false }
+      ]
+    },
+    {
+      question: 'The longitudinal separation minima based on DME, and each aircraft “on track” uses DME stations, is;',
+      answers: [
+        { text: '20 NM provided that the leading aircraft maintains a true airspeed of 10 kt or more faster than the succeeding aircraft.', correct: false },
+        { text: '10 NM provided that the leading aircraft maintains a true airspeed of 20 kt or more faster than the succeeding aircraft.', correct: true },
+        { text: '10 NM provided that the leading aircraft maintains a true airspeed of 10 kt or more faster than the succeeding aircraft.', correct: false },
+        { text: '10 NM provided that the leading aircraft maintains a true airspeed of 40 kt or more faster than the succeeding aircraft.', correct: false }
+      ]
+    },
+    {
+      question: 'A “RNAV” distance-based separation minimum may be used at the time the level is crossed, provided that each aircraft reports its distance to or from the same “on track” waypoint. This minimum is;',
+      answers: [
+        { text: '20 NM.', correct: false },
+        { text: '50 NM.', correct: false },
+        { text: '80 NM.', correct: true },
+        { text: '60 NM.', correct: false }
+      ]
+    },
+    {
+      question: 'Separation methods and minima - essential traffic. A VFR flight constitutes essential traffic to other VFR flights, when operating in controlled airspace classified as;',
+      answers: [
+        { text: 'B.', correct: true },
+        { text: 'B, C, and D.', correct: false },
+        { text: 'B and C.', correct: false },
+        { text: 'B, C, D, and E.', correct: false }
+      ]
+    },
+    {
+      question: 'One-minute separation may be used between departing aircraft if they are to fly on tracks diverging by at least;',
+      answers: [
+        { text: '30° immediately after take-off.', correct: false },
+        { text: '25° immediately after take-off.', correct: false },
+        { text: '45° immediately after take-off.', correct: true },
+        { text: '15° immediately after take-off.', correct: false }
+      ]
+    },
+    {
+      question: 'Two-minute separation may be used between departing aircraft if they are to fly on the same track, when;',
+      answers: [
+        { text: 'the preceding aircraft is 10 kt or more faster than the following aircraft.', correct: false },
+        { text: 'the preceding aircraft is 30 kt or more faster than the following aircraft.', correct: false },
+        { text: 'the preceding aircraft is 20 kt or more faster than the following aircraft.', correct: false },
+        { text: 'the preceding aircraft is 40 kt or more faster than the following aircraft.', correct: true }
+      ]
+    },
+    {
+      question: 'When vectoring an aircraft to intercept the localizer course, the final vector furnished shall be such as to enable the aircraft to intercept the localizer course at an angle not greater than;',
+      answers: [
+        { text: '20 degrees.', correct: false },
+        { text: '25 degrees.', correct: false },
+        { text: '15 degrees.', correct: false },
+        { text: '30 degrees.', correct: true }
+      ]
+    },
+  {
+    question: 'The following minimum radar separation shall be provided between aircraft on the same localizer with additional longitudinal separation as required for wake turbulence;',
+    answers: [
+      { text: '3 NM.', correct: false },
+      { text: '5 NM.', correct: true },
+      { text: '2 NM.', correct: false },
+      { text: '2.5 NM.', correct: false }
+    ]
+  },
+  {
+    question: 'The minimum radar separation to be provided to aircraft established on the localizer course shall be;',
+    answers: [
+      { text: '5.0 NM between aircraft on the same localizer course.', correct: false },
+      { text: '3.0 NM between aircraft on the same localizer course.', correct: true },
+      { text: '2.0 NM between aircraft on the same localizer course.', correct: false },
+      { text: '3.0 NM between aircraft on adjacent localizer course.', correct: false }
+    ]
+  },
+  {
+    question: 'The tolerance value used to determine that mode C derived level information displayed to the controller is accurate shall be;',
+    answers: [
+      { text: '+/- 500 ft.', correct: false },
+      { text: '+/- 200 ft.', correct: false },
+      { text: '+/- 250 ft.', correct: false },
+      { text: '+/- 300 ft.', correct: true }
+    ]
+  },
+  {
+    question: 'Radar Services - Radar Separation - Minima. Unless otherwise prescribed by the appropriate ATS authority, the horizontal radar separation minimum shall be;',
+    answers: [
+      { text: '5.0 NM.', correct: true },
+      { text: '3.5 NM.', correct: false },
+      { text: '3.0 NM.', correct: false },
+      { text: '10.0 NM.', correct: false }
+    ]
+  },
+  {
+    question: 'The criterion which shall be used to determine that a specific level is occupied by an aircraft shall be, (except that appropriate ATS authorities may specify a smaller criterion);',
+    answers: [
+      { text: '+/- 200 ft.', correct: false },
+      { text: '+/- 150 ft.', correct: false },
+      { text: '+/- 250 ft.', correct: false },
+      { text: '+/- 300 ft.', correct: true }
+    ]
+  },
+  {
+    question: 'An aircraft is considered to be maintaining its assigned level as long as the SSR mode C derived level information indicated that it is within;',
+    answers: [
+      { text: '+/- 500 ft of the assigned level.', correct: false },
+      { text: '+/- 200 ft of the assigned level.', correct: false },
+      { text: '+/- 300 ft of the assigned level.', correct: true },
+      { text: '+/- 250 ft of the assigned level.', correct: false }
+    ]
+  },
+  {
+    question: 'An aircraft in climb or descent is considered to have crossed a level when the SSR mode C derived level information indicates that it has passed this level in the required direction by;',
+    answers: [
+      { text: 'more than 300 ft.', correct: true },
+      { text: '+/- 300 ft.', correct: false },
+      { text: '300 ft.', correct: false },
+      { text: 'more than 200 ft.', correct: false }
+    ]
+  },
+  {
+    question: 'The radar separation minimum may be reduced but not below;',
+    answers: [
+      { text: '1.5 NM.', correct: false },
+      { text: '2.0 NM.', correct: false },
+      { text: '3.0 NM.', correct: true },
+      { text: '5.0 NM.', correct: false }
+    ]
+  },
+  {
+    question: 'Unless otherwise prescribed by the appropriate ATS authority, the radar controller should notify the non-radar controller when an aircraft making a radar approach is approximately;',
+    answers: [
+      { text: '8 NM.', correct: true },
+      { text: '6 NM.', correct: false },
+      { text: '10 NM.', correct: false },
+      { text: '5 NM.', correct: false }
+    ]
+  },
+  {
+    question: 'An aircraft making a radar approach should be advised to consider executing a missed approach, if the position or identification of the aircraft is in doubt during any portion of the final approach or if the aircraft is not visible on the radar display for significant interval during the last;',
+    answers: [
+      { text: '2 NM.', correct: true },
+      { text: '3 NM.', correct: false },
+      { text: '4 NM.', correct: false },
+      { text: '1 NM.', correct: false }
+    ]
+  },
+  {
+    question: 'When conducting a surveillance radar approach, the radar controller shall terminate the surveillance radar approach, except as determined by the appropriate ATS authority, at a distance of;',
+    answers: [
+      { text: '1 NM from touchdown.', correct: false },
+      { text: '3 NM from touchdown.', correct: false },
+      { text: '2.5 NM from touchdown.', correct: false },
+      { text: '2 NM from touchdown.', correct: true }
+    ]
+  },
+  {
+    question: 'Subject to conditions specified by the appropriate ATS authority, a radar controller may request radar-controlled aircraft to adjust their speed when established on intermediate and final approach. This speed adjustment should not be more than;',
+    answers: [
+      { text: '+/- 15 kt.', correct: false },
+      { text: '+/- 20 kt.', correct: true },
+      { text: '+/- 10 kt.', correct: false },
+      { text: '+/- 8 kt.', correct: false }
+    ]
+  },
+  {
+    question: 'The radar controller shall not request the pilot to adjust the speed where the aircraft has passed;',
+    answers: [
+      { text: '3 NM from the threshold on final approach.', correct: false },
+      { text: '5 NM from the threshold on final approach.', correct: false },
+      { text: '2 NM from the threshold on final approach.', correct: false },
+      { text: '4 NM from the threshold on final approach.', correct: true }
+    ]
+  },
+  {
+    question: 'Aircraft wishing to conduct IFR flight within advisory airspace, but not electing to use the air traffic advisory service;',
+    answers: [
+      { text: 'shall nevertheless submit a flight plan but changes made thereto are not necessary to be notified.', correct: false },
+      { text: 'may file a flight plan under pilot\'s discretion.', correct: false },
+      { text: 'need to file a flight plan.', correct: false },
+      { text: 'shall nevertheless submit a flight plan and notify changes made thereto to the ATS unit providing that service.', correct: true }
+    ]
+  },
+  {
+    question: 'Search and Rescue Signals, droppable containers or packages containing survival equipment for dropping should have the general nature of the content indicated by a colour code. The colour of droppable containers and streamers for food and water is;',
+    answers: [
+      { text: 'red.', correct: false },
+      { text: 'blue.', correct: true },
+      { text: 'yellow.', correct: false },
+      { text: 'black.', correct: false }
+    ]
+  },
+  {
+    question: 'The colour identification of the contents of droppable containers and packages containing survival equipment should take the form of coloured streamers according to the following code;',
+    answers: [
+      { text: 'Blue for medical supplies and first aid equipment.', correct: false },
+      { text: 'Red for food and water.', correct: false },
+      { text: 'Black for food and water.', correct: false },
+      { text: 'Yellow for blankets and protective clothing.', correct: true }
+    ]
+  },
+  {
+    question: 'Search and Rescue Signals, droppable containers or packages containing survival equipment for dropping should have the general nature of the content indicated by a colour code. The colour of droppable containers and streamers for medical supply is;',
+    answers: [
+      { text: 'black.', correct: false },
+      { text: 'yellow.', correct: false },
+      { text: 'red.', correct: true },
+      { text: 'blue.', correct: false }
+    ]
+  },
+  {
+    question: 'The prescribed re-examination of a licence holder operating in an area distant from designated medical examination facilities may be deferred at the discretion of the licence authority, provided that such deferment shall only be made as an exception and shall not exceed;',
+    answers: [
+      { text: 'a single period of three months in the case of a flight crew member of an aircraft engaged in commercial operations.', correct: false },
+      { text: 'a single period of six months in the case of a flight crew member of an aircraft engaged in non-commercial operations.', correct: true },
+      { text: 'two consecutive periods each of six months in the case of a flight crew member of an aircraft engaged in non-commercial operations.', correct: false },
+      { text: 'two consecutive periods each of three months in the case a flight crew member of an aircraft engaged in non-commercial operations.', correct: false }
+    ]
+  },
+  {
+    question: 'ICAO Annex 1. When a Contracting State renders valid a licence issued in accordance with Annex 1 by another Contracting State, the validity of the authorisation;',
+    answers: [
+      { text: 'shall not extend beyond the period of validity of the licence.', correct: true },
+      { text: 'depends on the regulations of the contracting state which renders valid the licence.', correct: false },
+      { text: 'shall not extend beyond one year for ATPL and CPL.', correct: false },
+      { text: 'is only considered for PPL.', correct: false }
+    ]
+  }
 ];
 
 startButton.addEventListener('click', startQuiz);
@@ -879,6 +1392,7 @@ function startQuiz() {
 
 document.getElementById('submit-password-btn').addEventListener('click', () => {
   const enteredPassword = document.getElementById('quiz-password').value;
+    numQuestionsToSolve = document.getElementById('num-questions').value;
 
   if (enteredPassword !== "1234") {
     alert("Incorrect password. You cannot start the quiz.");
@@ -889,6 +1403,10 @@ document.getElementById('submit-password-btn').addEventListener('click', () => {
   document.getElementById('password-container').classList.add('hide');
   questionContainerElement.classList.remove('hide');
   shuffledQuestions = shuffleArray(questions);
+    // Convert the number of questions to solve into an integer, unless it's "all"
+      if (numQuestionsToSolve !== 'all') {
+        shuffledQuestions = shuffledQuestions.slice(0, parseInt(numQuestionsToSolve));
+      }
   currentQuestionIndex = 0;
   score = 0;
   userChoices = []; // Reset user choices

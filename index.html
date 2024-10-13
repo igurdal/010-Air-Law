@@ -10,6 +10,7 @@
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
+    <h2 id="quiz-title">010-Air Law</h2>
   <div class="quiz-container">
     <div id="quiz">
       <div id="question-container" class="hide">
@@ -25,6 +26,14 @@
         <button id="start-btn" class="start-btn btn">010-Air Law</button>
         <div id="password-container" class="hide">
           <input type="password" id="quiz-password" placeholder="Enter password" />
+          <select id="num-questions">
+              <option value="3">3 Questions</option>
+              <option value="10">10 Questions</option>
+              <option value="25">25 Questions</option>
+              <option value="50">50 Questions</option>
+              <option value="100">100 Questions</option>
+              <option value="all">All Questions</option>
+            </select>
           <button id="submit-password-btn" class="btn">Submit Password</button>
         </div>
         <button id="next-btn" class="next-btn btn hide">Next</button>
@@ -32,6 +41,7 @@
     </div>
 
     <div id="score-container" class="hide">
+        <h2 id="results-title">RESULTS</h2> <!-- Add results heading -->
       <div id="student-info">
         <input type="text" id="student-name" placeholder="Enter your name" />
         <input type="text" id="student-surname" placeholder="Enter your surname" />
