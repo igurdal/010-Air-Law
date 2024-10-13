@@ -201,13 +201,32 @@ input, button {
   font-size: 16px;
 }
 @media (max-width: 480px) {
+    #quiz-password {
+        width: 100%;
+        padding: 10px;
+        margin-top: 10px;
+        font-size: 14px;
+        border: 1px solid black;
+        border-radius: 5px;
+        box-sizing: border-box; /* Ensure padding is included in the width calculation */
+      }
+      
+      #num-questions {
+        width: 100%; /* Ensure full width on small screens */
+        padding: 10px;
+        margin-top: 10px;
+        font-size: 14px;
+        border: 1px solid black;
+        border-radius: 5px;
+        box-sizing: border-box; /* Include padding in width */
+      }
     #quiz-title,
       #results-title {
         font-size: 20px; /* Slightly smaller titles for mobile */
       }
   .quiz-container {
-    padding: 15px; /* Reduce padding for smaller screens */
-    width: 90%; /* Change to a percentage for better scaling on smaller screens */
+    padding: 10px; /* Reduce padding for smaller screens */
+    width: 100%; /* Change to a percentage for better scaling on smaller screens */
     max-width: 600px; /* Set a max-width to avoid it becoming too large on larger screens */
     background-color: moccasin;
     border-radius: 10px;
@@ -215,6 +234,16 @@ input, button {
     padding: 15px; /* Adjust padding for smaller screens */
     margin: 15px; /* Ensure there's space between the container and screen edges */
 }
+  #submit-password-btn {
+      width: 100%;
+      font-size: 16px;
+      padding: 10px;
+      margin-top: 10px;
+      background-color: lightblue;
+      color: black;
+      border-radius: 5px;
+      border: 1px solid black;
+    }
   #student-info {
      flex-direction: column; /* Stack name and surname fields vertically on small screens */
    }

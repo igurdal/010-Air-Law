@@ -1360,6 +1360,1599 @@ const questions = [
       { text: 'shall not extend beyond one year for ATPL and CPL.', correct: false },
       { text: 'is only considered for PPL.', correct: false }
     ]
+  },
+  {
+    question: 'Which body of ICAO finalises the Standard and Recommended Practices (SARPS) for submission for adoption?',
+    answers: [
+      { text: 'The Air Navigation Commission.', correct: true },
+      { text: 'The Assembly.', correct: false },
+      { text: 'The Council.', correct: false },
+      { text: 'The Regional Air Navigation meeting.', correct: false }
+    ]
+  },
+  {
+    question: 'You may act as a flight instructor to carry out flight instruction for the issue of a PPL;',
+    answers: [
+      { text: 'with an ATPL.', correct: false },
+      { text: 'with a theoretical CPL examination plus flight instructor rating.', correct: true },
+      { text: 'with a CPL.', correct: false },
+      { text: 'with a PPL plus flight instructor rating.', correct: false }
+    ]
+  },
+  {
+    question: 'The validity of the instrument-rating aeroplane - IR(A) is;',
+    answers: [
+      { text: '6 months.', correct: false },
+      { text: '5 years.', correct: false },
+      { text: '1 year.', correct: true },
+      { text: '2 years.', correct: false }
+    ]
+  },
+  {
+    question: 'AIP. Which part of the AIP contains a list with “Location Indicators”?',
+    answers: [
+      { text: 'ENR', correct: false },
+      { text: 'AD', correct: false },
+      { text: 'LOC', correct: false },
+      { text: 'GEN', correct: true }
+    ]
+  },
+  {
+    question: 'The minimum age for obtaining a PPL is;',
+    answers: [
+      { text: '17 years.', correct: true },
+      { text: '16 years.', correct: false },
+      { text: '21 years.', correct: false },
+      { text: '18 years.', correct: false }
+    ]
+  },
+  {
+    question: 'An aircraft is considered to overtake another if it approaches the other aircraft from the rear on a line forming an angle of less than;',
+    answers: [
+      { text: '70 degrees with the plane of symmetry of the latter.', correct: true },
+      { text: '50 degrees with the plane of symmetry of the latter.', correct: false },
+      { text: '80 degrees with the plane of symmetry of the latter.', correct: false },
+      { text: '60 degrees with the plane of symmetry of the latter.', correct: false }
+    ]
+  },
+  {
+    question: 'A so-called “Visual Approach” can be performed;',
+    answers: [
+      { text: 'during IFR flights, if there is permanent sight on the movement area and the underlying ground.', correct: true },
+      { text: 'during IFR flights, if the cloud base is 1000 ft more than the appropriate DA or MDA for that procedure.', correct: false },
+      { text: 'as in above, but in addition there should be a visibility of 5.5 km or more.', correct: false },
+      { text: 'during IFR and VFR flights in VMC.', correct: false }
+    ]
+  },
+  {
+    question: 'An approaching aircraft may descend below the MSA if;',
+    answers: [
+      { text: 'the aircraft gets radar vectors.', correct: false },
+      { text: 'the pilot is following the published approach procedure.', correct: false },
+      { text: 'the pilot has the field and the underlying terrain in sight and will keep it in sight.', correct: false },
+      { text: 'all mentioned answers are correct.', correct: true }
+    ]
+  },
+  {
+    question: 'To be able to execute a public transport flight, the minimum and maximum age (with ATPL) is;',
+    answers: [
+      { text: '18 and 60 years.', correct: false },
+      { text: '17 and 59 years.', correct: false },
+      { text: '21 and 59 years.', correct: true },
+      { text: '16 and 60 years.', correct: false }
+    ]
+  },
+  {
+    question: 'The EAT has to be transmitted to the pilot as soon as possible, in case the expected delay is;',
+    answers: [
+      { text: '15 minutes or more.', correct: false },
+      { text: '10 minutes.', correct: true },
+      { text: '20 minutes.', correct: false },
+      { text: '5 minutes or more.', correct: false }
+    ]
+  },
+  {
+    question: 'Except when prescribed in procedures or made possible by agreements, aircraft under radar control shall not be vectored closer to the boundary of controlled airspace than;',
+    answers: [
+      { text: '2.5 NM.', correct: true },
+      { text: '3 NM.', correct: false },
+      { text: '5 NM.', correct: false },
+      { text: '1.5 NM.', correct: false }
+    ]
+  },
+  {
+    question: 'During radar control, a “radar-controller” shall issue a missed-approach instruction, in case the “tower-controller” has not issued a “landing-clearance” at the moment the aircraft is;',
+    answers: [
+      { text: '2 NM from touch-down.', correct: true },
+      { text: '4 NM from touch-down.', correct: false },
+      { text: '3 NM from touch-down.', correct: false },
+      { text: '1 NM from touch-down.', correct: false }
+    ]
+  },
+  {
+    question: 'Airspace Classification - Services. During a “Visual Approach” in Controlled Airspace Class C;',
+    answers: [
+      { text: 'ATC will provide separation with other traffic.', correct: true },
+      { text: 'ATC will provide separation with arriving but not with departing traffic.', correct: false },
+      { text: 'ATC will provide separation between flights under IFR, pilots are responsible for separation between flights under VFR.', correct: false },
+      { text: 'Pilots are responsible for separation with arriving and departing aircraft.', correct: false }
+    ]
+  },
+  {
+    question: '“Cabotage” refers to;',
+    answers: [
+      { text: 'domestic air services.', correct: true },
+      { text: 'a flight above territorial waters.', correct: false },
+      { text: 'a national air carrier.', correct: false },
+      { text: 'crop spraying.', correct: false }
+    ]
+  },
+  {
+    question: 'A Special Air Report comprises a number of sections. In section I the pilot fills in;',
+    answers: [
+      { text: 'a position report, including aircraft identification, height, position and time.', correct: true },
+      { text: 'flight identification and weather noted.', correct: false },
+      { text: 'weather noted.', correct: false },
+      { text: 'urgent messages.', correct: false }
+    ]
+  },
+  {
+    question: 'Which of the following correctly lists special purpose codes that are to be used in conjunction with Secondary Surveillance Radar (SSR)?',
+    answers: [
+      { text: 'Distress 7700, Hijacking 7500, Communication failure 7600.', correct: true },
+      { text: 'Distress 7500, Hijacking 7700, Communication failure 7600.', correct: false },
+      { text: 'Distress 7700, Hijacking 7600, Communication failure 7500.', correct: false },
+      { text: 'Distress 7600, Hijacking 7500, Communication failure 7700.', correct: false }
+    ]
+  },
+  {
+    question: 'Search and Rescue signals. The ground-air visual code for “REQUIRE MEDICAL ASSISTANCE” is;',
+    answers: [
+      { text: 'X.', correct: true },
+      { text: 'V.', correct: false },
+      { text: 'N.', correct: false },
+      { text: 'Y.', correct: false }
+    ]
+  },
+  {
+    question: 'JAR-FCL 3, Information of the Authority in case of illness. The holder of a pilot’s licence shall inform the Authority of any illness, which involves the incapacity to undertake licence-related functions for a certain number of days. The number of days is;',
+    answers: [
+      { text: '90.', correct: false },
+      { text: '60.', correct: false },
+      { text: '21.', correct: true },
+      { text: '30.', correct: false }
+    ]
+  },
+  {
+    question: 'If a licence holder is unable to perform the flight crew functions appropriate to that licence due to illness, the authority must be informed;',
+    answers: [
+      { text: 'if still not fit to fly when his/her current medical certificate expires.', correct: false },
+      { text: 'after 21 days of consecutive “illness”.', correct: true },
+      { text: 'after one calendar month of consecutive illness.', correct: false },
+      { text: 'as soon as possible if the illness is expected to last more than 21 days.', correct: false }
+    ]
+  },
+  {
+    question: 'To perform a VFR flight in airspace classification E;',
+    answers: [
+      { text: 'a clearance and/or two-way radio communication is required.', correct: false },
+      { text: 'a clearance and two-way radio communication is required.', correct: false },
+      { text: 'a clearance is required.', correct: false },
+      { text: 'two-way radio communication is not required.', correct: true }
+    ]
+  },
+  {
+    question: 'Which statement regarding approach control service is correct?',
+    answers: [
+      { text: 'If it is anticipated that an aircraft has to hold for 30 minutes or more, an Expected Approach Time will be transmitted by the most expeditious means to the aircraft.', correct: true },
+      { text: 'An approach sequence shall be established according to the sequence of initial radio contact between aircraft and approach control.', correct: false },
+      { text: 'During a visual approach an aircraft is maintaining its own separation.', correct: false },
+      { text: 'Approach control has to advise the aircraft operators about substantial delays in departure in any event when they are expected to exceed 45 minutes.', correct: false }
+    ]
+  },
+  {
+    question: 'Radar Services - Precision Surveillance Radar. At what distance from the end of the runway may a pilot expect that his aircraft can be identified on departure when ATC is equipped with and using PSR?',
+    answers: [
+      { text: '5 NM', correct: false },
+      { text: '1 NM', correct: true },
+      { text: '2 NM', correct: false },
+      { text: '3 NM', correct: false }
+    ]
+  },
+  {
+    question: 'Runway lead-in lighting should consist;',
+    answers: [
+      { text: 'of a group of at least three white lights flashing in sequence towards the runway.', correct: true },
+      { text: 'of an arbitrary amount of green lights.', correct: false },
+      { text: 'always of a straight row of lights towards the runway.', correct: false },
+      { text: 'of flashing lights only.', correct: false }
+    ]
+  },
+  {
+    question: 'Which of the following statements regarding Alerting service is correct?',
+    answers: [
+      { text: 'Alerting Service and Flight Information Service are often provided by the same ATS unit.', correct: true },
+      { text: 'The distress phase is established when an aircraft is known or believed to be the subject of unlawful interference.', correct: false },
+      { text: 'Aircraft in the vicinity of an aircraft known or believed to be the subject of unlawful interference, shall be informed about this.', correct: false },
+      { text: 'The Alert phase is established when no communication has been received from an aircraft within a period of thirty minutes after the time a communication should have been received.', correct: false }
+    ]
+  },
+  {
+    question: 'Aerodrome Control Service - Priority for landing. If an aircraft enters the traffic circuit without proper authorisation;',
+    answers: [
+      { text: 'it shall only be permitted to land after having received proper authorisation from the aerodrome authority.', correct: false },
+      { text: 'it shall be permitted to land if its actions indicate that it so desires.', correct: true },
+      { text: 'it shall not be permitted to land.', correct: false },
+      { text: 'it shall not be permitted to land unless it becomes evident that the aircraft is in a state of emergency.', correct: false }
+    ]
+  },
+  {
+    question: 'Which provisions on a VFR-flight in Class E airspace are CORRECT?',
+    answers: [
+      { text: 'Service provided: Traffic Information as far as practical, ATC Clearance not required.', correct: true },
+      { text: 'Service provided: Air Traffic Control Service, ATC Clearance required.', correct: false },
+      { text: 'Service provided: Air Traffic Control Service, ATC Clearance not required.', correct: false },
+      { text: 'Service provided: Traffic Information as far as practical, ATC Clearance required.', correct: false }
+    ]
+  },
+  {
+    question: 'VMC minima for VFR flights in Class B airspace, above 3050 m (10,000 ft) AMSL, are;',
+    answers: [
+      { text: '5 km visibility, 1500 m horizontal and 1000 ft vertical distance from clouds.', correct: false },
+      { text: '8 km visibility, 1500 m horizontal and 1000 ft vertical distance from clouds.', correct: true },
+      { text: '8 km visibility, and clear of clouds.', correct: false },
+      { text: 'No minima, VFR flights are not permitted.', correct: false }
+    ]
+  },
+  {
+    question: 'During an IFR flight in VMC in controlled airspace you experience a two-way radio communication failure. You will;',
+    answers: [
+      { text: 'land at the nearest suitable aerodrome and inform ATC.', correct: false },
+      { text: 'descend to the flight level submitted for that portion of flight.', correct: false },
+      { text: 'land at the nearest suitable aerodrome maintaining VMC and inform ATC.', correct: true },
+      { text: 'select A7600 and continue according to the current flight plan to destination.', correct: false }
+    ]
+  },
+  {
+    question: 'Which freedom of the air will be exercised by an airline planning a flight that will require a technical stop in a neighbouring State?',
+    answers: [
+      { text: '4th freedom', correct: false },
+      { text: '3rd freedom', correct: false },
+      { text: '1st freedom', correct: false },
+      { text: '2nd freedom', correct: true }
+    ]
+  },
+  {
+    question: 'Radar-controlled aircraft on intermediate or final approach may be requested to make minor speed adjustments by ATC. These adjustments shall never be more than;',
+    answers: [
+      { text: '25 knots at any stage.', correct: false },
+      { text: '20 knots and not within 4 NM of threshold.', correct: true },
+      { text: '15 knots at any stage.', correct: false },
+      { text: '10 knots and not within 5 NM of threshold.', correct: false }
+    ]
+  },
+  {
+    question: 'What is the length of an approach lighting system of a precision-approach runway CAT II?',
+    answers: [
+      { text: '300 m', correct: false },
+      { text: '150 m', correct: false },
+      { text: '600 m', correct: false },
+      { text: '900 m', correct: true }
+    ]
+  },
+  {
+    question: 'What is a “barrette”?',
+    answers: [
+      { text: 'a frangible structure on which approach lights are fixed.', correct: false },
+      { text: 'three or more ground lights closely spaced together to appear as a bar of lights.', correct: true },
+      { text: 'a CAT II or III holding position.', correct: false },
+      { text: 'a high obstacle near the runway and/or taxiway.', correct: false }
+    ]
+  },
+  {
+    question: 'Which statement is correct?',
+    answers: [
+      { text: 'The upper limit of a CTR shall be established at a height of at least 3000 ft AMSL.', correct: false },
+      { text: 'The lower limit of a TMA shall be established at a height of at least 700 ft AGL.', correct: true },
+      { text: 'The lower limit of an UIR may coincide with an IFR cruising level.', correct: false },
+      { text: 'The lower limit of a CTA shall be established at a height of at least 1500 ft AGL.', correct: false }
+    ]
+  },
+  {
+    question: 'The separation method whereby the vertical and horizontal separation may be reduced till a maximum of half the standard criteria is called;',
+    answers: [
+      { text: 'Composite separation.', correct: true },
+      { text: 'Reduced separation.', correct: false },
+      { text: 'Combined separation.', correct: false },
+      { text: 'Essential separation.', correct: false }
+    ]
+  },
+  {
+    question: 'The closure of a runway for a year, because of maintenance, will be published;',
+    answers: [
+      { text: 'only in AIP.', correct: false },
+      { text: 'in NOTAM and AIP, inclusive Supplement.', correct: true },
+      { text: 'NOTAM, AIP and MAL.', correct: false },
+      { text: 'only in NOTAM.', correct: false }
+    ]
+  },
+  {
+    question: 'Aerodromes signs should be in the following configuration;',
+    answers: [
+      { text: 'mandatory instruction signs, black background with red inscriptions.', correct: false },
+      { text: 'mandatory instruction signs, red background with black inscriptions.', correct: false },
+      { text: 'information signs, yellow or black background with black or yellow inscriptions.', correct: true },
+      { text: 'information signs, orange background with black inscriptions.', correct: false }
+    ]
+  },
+  {
+    question: 'In the event that a controlled flight inadvertently deviates from its current flight plan, the appropriate ATS unit has to be informed;',
+    answers: [
+      { text: 'it is a deviation from the track.', correct: false },
+      { text: 'the estimated time is in error by more than 10 minutes.', correct: false },
+      { text: 'the TAS varies by plus or minus 5% of the TAS notified in the flight plan.', correct: true },
+      { text: 'of an emergency.', correct: false }
+    ]
+  },
+  {
+    question: 'When the transponder appears to be unserviceable prior to departure and restore is impossible, then;',
+    answers: [
+      { text: 'you must indicate the failure in the flight plan, after which the ATC will endeavour to provide for continuation of the flight.', correct: false },
+      { text: 'you are not allowed to commence the flight.', correct: false },
+      { text: 'the flight can only continue in the most direct manner.', correct: false },
+      { text: 'departure to the nearest suitable airport where repair can be effected is allowed.', correct: true }
+    ]
+  },
+  {
+    question: 'Where State has not established minimum IFR altitudes, the minimum height of an aircraft above the highest obstacle over high terrain, or in mountainous areas shall be for an IFR flight;',
+    answers: [
+      { text: 'at least 1000 feet within 8 km of the estimated position.', correct: false },
+      { text: 'at least 1000 feet within 5 km of the estimated position.', correct: false },
+      { text: 'at least 2000 feet within 8 km of the estimated position.', correct: true },
+      { text: 'at least 2000 feet within 5 km of the estimated position.', correct: false }
+    ]
+  },
+  {
+    question: 'An aircraft shall display, if so equipped, an anti-collision light;',
+    answers: [
+      { text: 'while taxiing, but not when it is being towed.', correct: false },
+      { text: 'outside the daylight period in flight, but not on the ground when it is being towed.', correct: false },
+      { text: 'on the ground when the engines are running.', correct: true },
+      { text: 'outside the daylight period at engine-start. During the daylight period this is not applicable.', correct: false }
+    ]
+  },
+  {
+    question: 'The white dumb-bell with black perpendicular bar indicates that;',
+    answers: [
+      { text: 'this aerodrome is using parallel runways.', correct: false },
+      { text: 'taxiing need not be confined to the taxiways.', correct: true },
+      { text: 'glider flying is performed outside the landing area.', correct: false },
+      { text: 'landing, take-off and taxiing is allowed on runway and/or taxiway only.', correct: false }
+    ]
+  },
+  {
+    question: 'Unlawful interference (Hijacking) in non-RVSM airspace. If an aircraft is being subjected to unlawful interference (hijacked) in non-RVSM airspace and the pilot is forced to divert from the cleared track or cruising level without being able to communicate with ATS, he shall try to;',
+    answers: [
+      { text: 'proceed at a level which differs from the cruising level normally used for IFR flights in that area by 1000 ft if the aircraft is operated above FL290 or 500 ft if the aircraft is operated below FL290.', correct: true },
+      { text: 'slow the speed of the aircraft down to minimum, squawk A7700 and declare emergency on 121.5 MHz.', correct: false },
+      { text: 'commence as soon as possible an emergency descent in order to minimize the difference between cabin pressure and outside pressure.', correct: false },
+      { text: 'fly the emergency triangle and try to establish radiotelephony contact with the interference coordinator of the appropriate ATS unit on 121.5 MHz.', correct: false }
+    ]
+  },
+  {
+    question: 'What is the speed limit (IAS) in airspace class E?',
+    answers: [
+      { text: '250 kt for IFR and VFR up to FL 100.', correct: true },
+      { text: '250 kt only for VFR up to FL 195.', correct: false },
+      { text: '250 kt only for IFR up to FL 100.', correct: false },
+      { text: '250 kt VFR and IFR, all levels.', correct: false }
+    ]
+  },
+  {
+    question: 'Within the Annex to the ICAO convention that specifies dimensions of aerodromes are codes for different runways. Which is the minimum width of a runway with runway code 4?',
+    answers: [
+      { text: '40 metres', correct: true },
+      { text: '35 metres', correct: false },
+      { text: '45 metres', correct: true },
+      { text: '50 metres', correct: false }
+    ]
+  },
+  {
+    question: 'One of the main objectives of ICAO is to;',
+    answers: [
+      { text: 'approve new international airlines.', correct: false },
+      { text: 'approve the ticket prices set by international airline companies.', correct: false },
+      { text: 'develop principles and techniques for international aviation.', correct: true },
+      { text: 'approve new international airlines with jet aircraft.', correct: false }
+    ]
+  },
+  {
+    question: 'The “Standards” contained in the Annexes to the Chicago convention are to be considered;',
+    answers: [
+      { text: 'binding for the member states that have not notified ICAO about a national difference.', correct: true },
+      { text: 'binding for all member states.', correct: false },
+      { text: 'advice and guidance for the aviation legislation within the member states.', correct: false },
+      { text: 'binding for all airline companies with international traffic.', correct: false }
+    ]
+  },
+  {
+    question: 'The Warsaw convention and later amendments deals with;',
+    answers: [
+      { text: 'the regulation of transportation of dangerous goods.', correct: false },
+      { text: 'limitation of the operator’s liability for damage caused to passengers and goods transported.', correct: true },
+      { text: 'operator’s licence for international scheduled aviation.', correct: false },
+      { text: 'the security system at airports.', correct: false }
+    ]
+  },
+  {
+    question: 'Altimeter setting procedures - Transition Layer. When flying through the transition layer the vertical position of the aircraft as;',
+    answers: [
+      { text: 'either altitude or flight level in climb.', correct: false },
+      { text: 'altitude in climb.', correct: false },
+      { text: 'flight level in a descent.', correct: false },
+      { text: 'altitude in a descent.', correct: true }
+    ]
+  },
+  {
+    question: 'The air traffic control unit has reported “radar contact”, what does that mean to the pilot?',
+    answers: [
+      { text: 'The radar identity of the aircraft has been established.', correct: true },
+      { text: 'The aircraft is subject to positive control.', correct: false },
+      { text: 'The pilot does not have to follow up the position of the aircraft.', correct: false },
+      { text: 'Position reports may be omitted.', correct: false }
+    ]
+  },
+  {
+    question: 'What is the minimum vertical separation between aircraft flying IFR below flight level 290?',
+    answers: [
+      { text: '1500 feet', correct: false },
+      { text: '500 feet', correct: false },
+      { text: '1000 feet', correct: true },
+      { text: '2000 feet', correct: false }
+    ]
+  },
+  {
+    question: 'Change from IFR to VFR will always take place;',
+    answers: [
+      { text: 'on the initiative of the aircraft commander.', correct: true },
+      { text: 'as instructed by an air traffic control unit.', correct: false },
+      { text: 'at the clearance limit, irrespective of the weather conditions.', correct: false },
+      { text: 'when the aircraft is leaving controlled airspace during VMC.', correct: false }
+    ]
+  },
+  {
+    question: 'Which of the following is obligating for members of ICAO?',
+    answers: [
+      { text: 'ICAO must be informed about differences from the standards in any of the Annexes to the convention.', correct: true },
+      { text: 'ICAO must be informed about new flight crew licenses and any suspended validity of such licenses.', correct: false },
+      { text: 'ICAO must be informed about changes in the national regulations.', correct: false },
+      { text: 'ICAO shall approve the pricing of tickets on international airline connections.', correct: false }
+    ]
+  },
+  {
+    question: 'An aircraft which is being subjected to unlawful interference (hijacked) and is forced to divert from the cleared track or cruising level without being able to communicate with ATS shall try to;',
+    answers: [
+      { text: 'declare an emergency.', correct: false },
+      { text: 'continue at an altitude that differs from the semicircular rule with 1000 feet when above FL 290 and 500 feet when lower than FL 290.', correct: true },
+      { text: 'fly the emergency triangle.', correct: false },
+      { text: 'as soon as possible commence emergency descent in order to minimize the difference between cabin pressure and outside pressure.', correct: false }
+    ]
+  },
+  {
+    question: 'Which of the following Annexes to the Chicago convention contains minimum specifications for a crew licence to have international validity?',
+    answers: [
+      { text: 'Annex 1', correct: true },
+      { text: 'Annex 3', correct: false },
+      { text: 'Annex 2', correct: false },
+      { text: 'Annex 4', correct: false }
+    ]
+  },
+  {
+    question: 'Which of the following Annexes to the Chicago convention contains minimum specifications for the design of aerodromes?',
+    answers: [
+      { text: 'Annex 14', correct: true },
+      { text: 'Annex 6', correct: false },
+      { text: 'Annex 11', correct: false },
+      { text: 'Annex 10', correct: false }
+    ]
+  },
+  {
+    question: 'An aircraft is maintaining FL 150 within airspace class C. Another aircraft below at FL 140 is receiving a clearance to descend to FL 70. It is severe turbulence in the area. When is the earliest that a clearance to descend to FL 140 or below can be expected?',
+    answers: [
+      { text: 'When the other aircraft has reported that it has left FL 120.', correct: false },
+      { text: 'When the other aircraft has reported that it has left FL 140.', correct: false },
+      { text: 'When the other aircraft has reported that it has reached FL 70.', correct: false },
+      { text: 'When the other aircraft has reported that it has descended through FL 130.', correct: true }
+    ]
+  },
+  {
+    question: 'Who is responsible, under Annex 13 of the Chicago convention, for the initiation of an accident investigation?',
+    answers: [
+      { text: 'The law enforcement authorities of the state in which the aircraft is registered.', correct: false },
+      { text: 'The aircraft manufacturer.', correct: false },
+      { text: 'Operators of the same aircraft type.', correct: false },
+      { text: 'The government of the state in which the accident took place.', correct: true }
+    ]
+  },
+  {
+    question: 'Which of the following Annexes to the Chicago convention contains international standards and recommended practices for air traffic services (ATS)?',
+    answers: [
+      { text: 'Annex 14', correct: false },
+      { text: 'Annex 11', correct: true },
+      { text: 'Annex 17', correct: false },
+      { text: 'Annex 6', correct: false }
+    ]
+  },
+  {
+    question: 'According to international agreements wind direction shall be adjusted to the local variation and given in degrees magnetic;',
+    answers: [
+      { text: 'when the local variation exceeds 10° East or 10° West.', correct: false },
+      { text: 'in upper wind forecast for areas north of lat 60° North or 60° South.', correct: false },
+      { text: 'before landing and take-off.', correct: true },
+      { text: 'when an aircraft on the request by a meteorological watch office (MWO) or at specified points transmits a PIREP.', correct: false }
+    ]
+  },
+  {
+    question: 'IFR cruising levels within controlled airspace shall be given as flight level (FL);',
+    answers: [
+      { text: 'when the QNH is higher than the standard pressure 1013 hPa.', correct: false },
+      { text: 'only in airspace class A.', correct: false },
+      { text: 'if the obstacle clearance is more than 2000 feet.', correct: false },
+      { text: 'above the transition altitude when applicable.', correct: true }
+    ]
+  },
+  {
+    question: 'Changing of flight rules from IFR to VFR is possible;',
+    answers: [
+      { text: 'only when leaving controlled airspace.', correct: false },
+      { text: 'if instructed by ATC so long as VMC is forecasted during the next 60 minutes.', correct: false },
+      { text: 'if the commander so requests.', correct: true },
+      { text: 'if instructed by ATC so long as VMC is forecasted during the next 30 minutes.', correct: false }
+    ]
+  },
+  {
+    question: 'For controlled traffic that shall be separated in the vicinity of an airport, separation minima may be reduced;',
+    answers: [
+      { text: 'only if the air traffic controller has the involved aircraft in sight.', correct: false },
+      { text: 'if the commander of the involved aircraft so requests.', correct: false },
+      { text: 'at the discretion of the air traffic controller.', correct: false },
+      { text: 'when the commander in the following aircraft has the preceding aircraft in sight and is able to maintain own separation.', correct: true }
+    ]
+  },
+  {
+    question: 'If the crew on an arriving aircraft approaching a controlled aerodrome will report “field in sight”, a clearance for “visual approach” may be given under certain conditions;',
+    answers: [
+      { text: 'the meteorological visibility must not be less than 8 km.', correct: false },
+      { text: 'continued approach will be according to VFR.', correct: true },
+      { text: 'the air traffic controller will provide separation to other controlled traffic.', correct: false },
+      { text: 'the approach must be passing the FAF.', correct: false }
+    ]
+  },
+  {
+    question: 'What is the shortest distance in a sequence for landing between a “Heavy” aircraft preceding a “Light” aircraft?',
+    answers: [
+      { text: '2 km', correct: false },
+      { text: '10 km', correct: false },
+      { text: '3 NM', correct: false },
+      { text: '6 NM', correct: true }
+    ]
+  },
+  {
+    question: 'Aircraft flying along the same track may be separated by DME-distances from the same DME and it is confirmed that the aircraft have passed each other. Specify the shortest difference in DME-distance to make it possible for one aircraft to climb or descend;',
+    answers: [
+      { text: '15 NM.', correct: false },
+      { text: '20 NM.', correct: false },
+      { text: '12 NM.', correct: false },
+      { text: '10 NM.', correct: true }
+    ]
+  },
+  {
+    question: 'The objectives of ICAO was ratified by the;',
+    answers: [
+      { text: 'Geneva convention 1936.', correct: false },
+      { text: 'Warsaw convention 1929.', correct: false },
+      { text: 'Chicago convention 1944.', correct: true },
+      { text: 'Geneva convention 1948.', correct: false }
+    ]
+  },
+  {
+    question: 'According to JAR-FCL, a professional flight crew licence issued by a non-JAA State may be rendered valid for use on aircraft registered in a JAA Member State;',
+    answers: [
+      { text: 'at the discretion of the Authority of that Member State concerned for a period not exceeding one year, provided that the basic licence remains valid.', correct: true },
+      { text: 'at the discretion of the Authority of the Member State concerned for a period not exceeding the period validity of basic licence.', correct: false },
+      { text: 'at the discretion of the Authority of that Member State concerned for a period not exceeding one year.', correct: false },
+      { text: 'at the discretion of the Authority of that Member State concerned for a period not exceeding one year, provided that the basic licence remains valid.', correct: false }
+    ]
+  },
+  {
+    question: 'According to JAR-FCL, licence holders do not exercise the privileges of their licences, related ratings or authorisations at any time when they are aware of any decrease in their medical fitness which might render them unable to safely exercise those privileges. They shall without undue delay seek the advice of the authority or AME when becoming aware of hospital or clinic admissions for;',
+    answers: [
+      { text: 'more than one week.', correct: false },
+      { text: 'more than 12 hours.', correct: true },
+      { text: 'more than 12 days.', correct: false },
+      { text: 'any period.', correct: false }
+    ]
+  },
+  {
+    question: 'According to JAR-FCL, Class 2 medical certificate for private pilots will be valid for;',
+    answers: [
+      { text: '24 months until age of 40, 12 months until age of 60 and 6 months thereafter.', correct: false },
+      { text: '24 months until age of 40, 12 months thereafter.', correct: false },
+      { text: '60 months until age of 40, 24 months until age of 50, 12 months until age of 65 and 6 months thereafter.', correct: true },
+      { text: '60 months until age of 30, 24 months until age of 40, 12 months thereafter.', correct: false }
+    ]
+  },
+  {
+    question: 'If an arriving aircraft is making a straight in approach a departing aircraft may take off in any direction;',
+    answers: [
+      { text: 'until ten minutes before the arriving aircraft is estimated to be over the instrument runway.', correct: false },
+      { text: 'until five minutes before the arriving aircraft is estimated to be over the instrument runway.', correct: true },
+      { text: 'until two minutes before the arriving aircraft is estimated to be over the instrument runway.', correct: false },
+      { text: 'until three minutes before the arriving aircraft is estimated to be over the instrument runway.', correct: false }
+    ]
+  },
+  {
+    question: 'When surveillance radar approaches are to be continued to the threshold of the runway transmission should not be interrupted for intervals of more than five seconds while the aircraft is within a distance of;',
+    answers: [
+      { text: '1.5 NM from the touchdown.', correct: false },
+      { text: '2 NM from the touchdown.', correct: false },
+      { text: '4 NM from the touchdown.', correct: true },
+      { text: '3 NM from the touchdown.', correct: false }
+    ]
+  },
+  {
+    question: 'The surveillance radar approach shall be terminated at a distance of 2 NM from the touchdown except when as determined by the appropriate ATS authority, the accuracy of the radar equipment permits to be continued to a prescribed point less than 2 NM from the touchdown. In this case distance and level information shall be given at each;',
+    answers: [
+      { text: 'half NM.', correct: true },
+      { text: 'half mile.', correct: false },
+      { text: '1.5 NM.', correct: false },
+      { text: '1 NM.', correct: false }
+    ]
+  },
+  {
+    question: 'Clearance on Final Approach. A pilot may expect to receive the clearance to land or any alternative clearance before the aircraft reaches a distance of;',
+    answers: [
+      { text: '3 NM from touchdown.', correct: false },
+      { text: '2 NM from touchdown.', correct: true },
+      { text: '5 NM from touchdown.', correct: false },
+      { text: '4 NM from touchdown.', correct: false }
+    ]
+  },
+  {
+    question: 'An aircraft making a radar approach should be directed to execute a missed approach if no clearance to land has been received from the non-radar controller by the time the aircraft reaches a distance of;',
+    answers: [
+      { text: '5 NM from the touchdown.', correct: false },
+      { text: '2 NM from the touchdown.', correct: true },
+      { text: '4 NM from the touchdown.', correct: false },
+      { text: '1.5 NM from the touchdown.', correct: false }
+    ]
+  },
+  {
+    question: 'An aircraft making a radar approach should be directed to consider executing a missed approach if the aircraft is not visible on the radar display for any significant interval during the;',
+    answers: [
+      { text: 'last 5 NM of the approach.', correct: false },
+      { text: 'last 3 NM of the approach.', correct: false },
+      { text: 'last 2 NM of the approach.', correct: true },
+      { text: 'last 4 NM of the approach.', correct: false }
+    ]
+  },
+  {
+    question: 'What is the maximum speed adjustment that a pilot should be requested to make when under radar control and established on intermediate and final approach?',
+    answers: [
+      { text: '± 10 KT', correct: false },
+      { text: '± 15 KT', correct: false },
+      { text: '± 20 KT', correct: true },
+      { text: '± 25 KT', correct: false }
+    ]
+  },
+  {
+    question: 'Lights on and in the vicinity of aerodromes may be turned off, provided that they can be again brought into operation;',
+    answers: [
+      { text: 'at least 15 minutes before the expected arrival of an aircraft.', correct: false },
+      { text: 'at least 30 minutes before the expected arrival of an aircraft.', correct: false },
+      { text: 'at least one hour before the expected arrival of an aircraft.', correct: true },
+      { text: 'at least 5 minutes before the expected arrival of an aircraft.', correct: false }
+    ]
+  },
+  {
+    question: 'At the commencement of final approach, if the controller possesses wind information in the form of components, significant changes in the mean surface wind direction and speed shall be transmitted to aircraft. The mean cross-wind component significant change is;',
+    answers: [
+      { text: '8 KT.', correct: false },
+      { text: '5 KT.', correct: true },
+      { text: '10 KT.', correct: false },
+      { text: '3 KT.', correct: false }
+    ]
+  },
+  {
+    question: 'At the commencement of final approach, if the controller possesses wind information in the form of components, significant changes in the mean surface wind direction and speed shall be transmitted to aircraft. The mean tail-wind component significant change is;',
+    answers: [
+      { text: '2 KT.', correct: true },
+      { text: '3 KT.', correct: false },
+      { text: '4 KT.', correct: false },
+      { text: '5 KT.', correct: false }
+    ]
+  },
+  {
+    question: 'At the commencement of final approach, if the controller possesses wind information in the form of components, significant changes in the mean surface wind direction and speed shall be transmitted to aircraft. The mean head-wind component significant change is;',
+    answers: [
+      { text: '5 KT.', correct: false },
+      { text: '8 KT.', correct: false },
+      { text: '4 KT.', correct: false },
+      { text: '10 KT.', correct: true }
+    ]
+  },
+  {
+    question: 'Whenever unlawful interference with an aircraft is suspected, and where automatic distinct display of SSR Mode A code 7500 and code 7700 is not provided, the radar controller shall attempt to verify this suspicion by;',
+    answers: [
+      { text: 'setting the SSR decoder to mode A 7700 then to standby and thereafter to code 7500.', correct: false },
+      { text: 'setting the SSR decoder to mode A code 7500 and thereafter to code 7700.', correct: true },
+      { text: 'setting the SSR decoder to mode A code 7000 and thereafter to code 7500.', correct: false },
+      { text: 'setting the SSR decoder to mode A 7500 then to standby and thereafter to code 7700.', correct: false }
+    ]
+  },
+  {
+    question: 'When the Mach number technique (MNT) is being applied, and the preceding aircraft shall maintain a mach number equal to or greater than the following aircraft a RNAV distance based separation minimum may be used on the same direction tracks in lieu of 10 minutes longitudinal separation minimum. The distance is;',
+    answers: [
+      { text: '70 NM.', correct: false },
+      { text: '100 NM.', correct: false },
+      { text: '80 NM.', correct: true },
+      { text: '60 NM.', correct: false }
+    ]
+  },
+  {
+    question: 'Longitudinal separation minima based on distance using DME for aircraft at the same cruising level and track, provided that each aircraft utilises “on track” DME stations and separation is checked by obtaining simultaneous DME readings, is;',
+    answers: [
+      { text: '40 NM.', correct: false },
+      { text: '25 NM.', correct: false },
+      { text: '20 NM.', correct: true },
+      { text: '10 NM.', correct: false }
+    ]
+  },
+  {
+    question: 'Longitudinal separation minima based on time for aircraft at the same cruising level when navigation aids permit frequent determination of position and speed provided that the preceding aircraft is maintaining a true air speed of 40 kt or more, faster than the succeeding aircraft will be;',
+    answers: [
+      { text: '2 minutes.', correct: false },
+      { text: '3 minutes.', correct: true },
+      { text: '10 minutes.', correct: false },
+      { text: '5 minutes.', correct: false }
+    ]
+  },
+  {
+    question: 'Longitudinal separation minima based on time for aircraft at the same cruising level when navigation aids permit frequent determination of position and speed provided that the preceding aircraft is maintaining a true air speed of 20 kt or more, faster than the succeeding aircraft will be;',
+    answers: [
+      { text: '2 minutes.', correct: false },
+      { text: '5 minutes.', correct: true },
+      { text: '3 minutes.', correct: false },
+      { text: '10 minutes.', correct: false }
+    ]
+  },
+  {
+    question: 'Longitudinal separation minima based on time for aircraft at the same cruising level when navigation aids permit frequent determination of position and speed will be;',
+    answers: [
+      { text: '10 minutes.', correct: true },
+      { text: '3 minutes.', correct: false },
+      { text: '5 minutes.', correct: false },
+      { text: '15 minutes.', correct: false }
+    ]
+  },
+  {
+    question: 'Repetitive flight plans (RPLs) shall not be used for flights operated regularly on the same day(s) of consecutive weeks and;',
+    answers: [
+      { text: 'on at least ten occasions or every day over a period of at least ten consecutive days.', correct: true },
+      { text: 'on at least ten occasions or every day over a period of at least 20 consecutive days.', correct: false },
+      { text: 'on at least 20 occasions.', correct: false },
+      { text: 'on at least 20 days consecutively.', correct: false }
+    ]
+  },
+  {
+    question: 'What is the minimum wake turbulence separation criteria when a Light aircraft is taking off behind a Medium aircraft and both are using the same runway?',
+    answers: [
+      { text: '5 minutes', correct: false },
+      { text: '1 minute', correct: false },
+      { text: '2 minutes', correct: true },
+      { text: '3 minutes', correct: false }
+    ]
+  },
+  {
+    question: 'Special VFR flights may the authorised to operate locally within a control zone when the ground visibility is not less than 1500 metres, even when the aircraft is not equipped with a functioning radio receiver within class;',
+    answers: [
+      { text: 'C, D and E airspace.', correct: false },
+      { text: 'E airspace.', correct: true },
+      { text: 'D and E airspace.', correct: false },
+      { text: 'D airspace.', correct: false }
+    ]
+  },
+  {
+    question: 'In order to meet wake turbulence criteria, for arriving aircraft and using timed approaches, what minima shall be applied to aircraft landing behind a Heavy or a Medium aircraft?',
+    answers: [
+      { text: 'Light aircraft behind Medium aircraft - 4 minutes.', correct: false },
+      { text: 'Medium aircraft behind Heavy aircraft - 2 minutes.', correct: true },
+      { text: 'Medium aircraft behind Heavy aircraft - 3 minutes.', correct: false },
+      { text: 'Medium aircraft other Medium aircraft - 2 minutes.', correct: false }
+    ]
+  },
+  {
+    question: 'A minimum vertical separation shall be provided until aircraft are established inbound on the ILS localizer course and/or MLS final approach track. This minimum is, when independent parallel approaches are being conducted;',
+    answers: [
+      { text: '200 m (660 ft).', correct: false },
+      { text: '150 m (500 ft).', correct: false },
+      { text: '100 m (330 ft).', correct: false },
+      { text: '300 m (1000 ft).', correct: true }
+    ]
+  },
+  {
+    question: 'A separation minimum shall be applied between a light or MEDIUM aircraft and a HEAVY aircraft and between a LIGHT aircraft and a MEDIUM aircraft when the heavier aircraft is making a low or missed approach and the lighter aircraft is landing on the same runway in the opposite direction or on a parallel opposite direction runway separated by;',
+    answers: [
+      { text: 'less than 730 m.', correct: false },
+      { text: '760 m.', correct: false },
+      { text: 'less than 760 m.', correct: true },
+      { text: '730 m.', correct: false }
+    ]
+  },
+  {
+    question: 'Wake turbulence - Separation between departing aircraft. The minimum separation to be applied between a LIGHT or MEDIUM aircraft taking off behind a HEAVY aircraft or a LIGHT aircraft taking off behind a MEDIUM aircraft using the same runway is;',
+    answers: [
+      { text: '3 minutes.', correct: false },
+      { text: '2 minutes.', correct: true },
+      { text: '1 minute.', correct: false },
+      { text: '5 minutes.', correct: false }
+    ]
+  },
+  {
+    question: 'Horizontal separation - Independent parallel approaches. A minimum radar separation shall be provided until aircraft are established inbound on the ILS localizer course and/or MLS final approach track. This minimum is, when independent parallel approaches are being conducted;',
+    answers: [
+      { text: '1.0 NM.', correct: false },
+      { text: '2.0 NM.', correct: false },
+      { text: '3.0 NM.', correct: true },
+      { text: '5.0 NM.', correct: false }
+    ]
+  },
+  {
+    question: 'Horizontal separation - Independent parallel approaches. Such approaches may be conducted to parallel runways provided that, the missed approach track for one approach diverges from the missed approach track of the adjacent approach by at least;',
+    answers: [
+      { text: '30º (degrees).', correct: true },
+      { text: '25º (degrees).', correct: false },
+      { text: '45º (degrees).', correct: false },
+      { text: '20º (degrees).', correct: false }
+    ]
+  },
+  {
+    question: 'Independent parallel approaches may be conducted to parallel runways provided that;',
+    answers: [
+      { text: 'the missed approach track for one approach diverges by at least 25° (degrees) from the missed approach track of the adjacent approach.', correct: false },
+      { text: 'the missed approach track for one approach diverges by at least 45° (degrees) from the missed approach track of the adjacent approach.', correct: false },
+      { text: 'the missed approach track for one approach diverges by at least 30° (degrees) from the missed approach track of the adjacent approach.', correct: true },
+      { text: 'the missed approach track for one approach diverges by at least 20° (degrees) from the missed approach track of the adjacent approach.', correct: false }
+    ]
+  },
+  {
+    question: 'When independent parallel approaches are being conducted to parallel runways and vectoring to intercept the ILS localizer course or MLS final approach track, the vector shall be such as to enable the aircraft to be established on the ILS localizer course or MLS final approach track in level flight for;',
+    answers: [
+      { text: 'at least 2.5 NM prior to intercepting the ILS glide path or specified MLS elevation angle.', correct: false },
+      { text: 'at least 2.0 NM prior to intercepting the ILS glide path or specified MLS elevation angle.', correct: true },
+      { text: 'at least 1.5 NM prior to intercepting the ILS glide path or specified MLS elevation angle.', correct: false },
+      { text: 'at least 3.0 NM prior to intercepting the ILS glide path or specified MLS elevation angle.', correct: false }
+    ]
+  },
+  {
+    question: 'Dependent parallel approaches may be conducted to parallel runways provided that the missed approach track for one approach diverges by;',
+    answers: [
+      { text: 'at least 15° (degrees) from the missed approach track of the adjacent approach.', correct: false },
+      { text: 'at least 30° (degrees) from the missed approach track of the adjacent approach.', correct: true },
+      { text: 'at least 45° (degrees) from the missed approach track of the adjacent approach.', correct: false },
+      { text: 'at least 25° (degrees) from the missed approach track of the adjacent approach.', correct: false }
+    ]
+  },
+  {
+    question: 'Non Radar Wake Turbulence separation minima for departing aircraft. The minimum separation that shall be applied between a LIGHT or MEDIUM aircraft taking off behind a HEAVY aircraft and both are using the same runway is;',
+    answers: [
+      { text: '1 minute.', correct: false },
+      { text: '2 minutes.', correct: true },
+      { text: '3 minutes.', correct: false },
+      { text: '4 minutes.', correct: false }
+    ]
+  },
+  {
+    question: 'The speed limitation for IFR flights inside ATS airspace classified as C, when flying below 3050 m (10000 ft) AMSL, is;',
+    answers: [
+      { text: '240 KT IAS.', correct: false },
+      { text: 'not applicable.', correct: true },
+      { text: '250 KT IAS.', correct: false },
+      { text: '250 KT TAS.', correct: false }
+    ]
+  },
+  {
+    question: 'The speed limitation for VFR flights inside ATS airspace classified as C, when flying below 3050 m (10000 ft) AMSL, is;',
+    answers: [
+      { text: '250 KT TAS.', correct: false },
+      { text: '240 KT IAS.', correct: false },
+      { text: 'not applicable.', correct: false },
+      { text: '250 KT IAS.', correct: true }
+    ]
+  },
+  {
+    question: 'The speed limitation for IFR flights inside ATS airspace classified as E, when flying below 3050 m (10000 ft) AMSL, is;',
+    answers: [
+      { text: '250 KT TAS.', correct: false },
+      { text: '260 KT IAS.', correct: false },
+      { text: '250 KT IAS.', correct: true },
+      { text: 'not applicable.', correct: false }
+    ]
+  },
+  {
+    question: 'The speed limitation for both IFR flights and VFR flights inside ATS airspace classified as B, when flying below 3050 m (10000 ft) AMSL, is;',
+    answers: [
+      { text: '260 KT IAS.', correct: false },
+      { text: '250 KT TAS.', correct: false },
+      { text: 'not applicable.', correct: true },
+      { text: '250 KT IAS.', correct: false }
+    ]
+  },
+  {
+    question: 'A strayed aircraft is;',
+    answers: [
+      { text: 'an aircraft which has deviated significantly from its intended track or which reports that it is lost.', correct: true },
+      { text: 'only that aircraft which reports that it is lost.', correct: false },
+      { text: 'only that aircraft which has deviated significantly its intended track.', correct: false },
+      { text: 'an aircraft in a given area but whose identity has not been established.', correct: false }
+    ]
+  },
+  {
+    question: 'Flight information service provided to flights shall include the provision of information concerning collision hazards to aircraft operating in airspace classes;',
+    answers: [
+      { text: 'A to E (inclusive).', correct: false },
+      { text: 'F and G.', correct: false },
+      { text: 'C to G (inclusive).', correct: true },
+      { text: 'A to G (inclusive).', correct: false }
+    ]
+  },
+  {
+    question: 'ATIS broadcast messages containing departure and arrival information should include cloud cover, when the clouds are;',
+    answers: [
+      { text: 'cumulonimbus.', correct: false },
+      { text: 'below 1500 m (5000 ft) or below the highest minimum sector altitude, whichever is the greater.', correct: true },
+      { text: 'below 900 m (3000 ft) or below the highest minimum sector altitude, whichever is the greater.', correct: false },
+      { text: 'below 2000 m (600 ft) or below the highest minimum sector altitude, whichever is the greater.', correct: false }
+    ]
+  },
+  {
+    question: 'Where an upper flight information region (UIR) is established, the procedures applicable there in;',
+    answers: [
+      { text: 'have to be as agreed at the regional air navigation meetings.', correct: false },
+      { text: 'have to be as indicated by ICAO council.', correct: false },
+      { text: 'need not to be identical with those applicable in the underlying flight information region.', correct: true },
+      { text: 'has to be the same as the underlying flight information region.', correct: false }
+    ]
+  },
+  {
+    question: 'The VMC minima for a VFR flight inside an ATS airspace classified as B, is;',
+    answers: [
+      { text: '8 km visibility when at or above 3050 m (10.000 ft) AMSL and clear of clouds.', correct: false },
+      { text: '5 NM visibility when below 3050 m (10.000 ft) AMSL, 1500 m horizontal and 300 m vertical from cloud.', correct: false },
+      { text: '5 NM visibility below 3050 m (10.000 ft) AMSL, clear of clouds.', correct: false },
+      { text: '8 km visibility when at or above 3050 m (10.000 ft) AMSL, and 1500 m horizontal and 300 m vertical from clouds.', correct: true }
+    ]
+  },
+  {
+    question: 'A VFR flight when flying inside an ATS airspace classified as B has to maintain the following minima of flight visibility and distance from clouds;',
+    answers: [
+      { text: '8 km below 3050 m (10.000 ft) AMSL, 1500 m horizontal and 300 m vertical from clouds.', correct: false },
+      { text: '5 km below 3050 m (10.000 ft) AMSL and clear of clouds.', correct: false },
+      { text: '5 km below 3050 m (10.000 ft) AMSL, 1500 m horizontal and 300 m vertical from clouds.', correct: true },
+      { text: '5 km visibility, 1500 m horizontal and 300 m vertical from clouds.', correct: false }
+    ]
+  },
+  {
+    question: 'A VFR flight when flying inside an ATS airspace classified as C has to maintain the following minima of flight visibility and distance from clouds;',
+    answers: [
+      { text: '8 km at or above 3050 m (10.000 ft) AMSL, 1500 m horizontal and 300 m vertical from clouds.', correct: true },
+      { text: '8 km at or above 3050 m (10.000 ft) AMSL, and clear of clouds.', correct: false },
+      { text: '5 NM at or above 3050 m (10.000 ft) AMSL, 1500 m horizontal and 300 m vertical from clouds.', correct: false },
+      { text: '5 km at or above 3050 m (10.000 ft) AMSL,1500 m horizontal and 300 m vertical from clouds.', correct: false }
+    ]
+  },
+  {
+    question: 'An ATS airspace where IFR and VFR flights are permitted, all flights are subject to air traffic control service and IFR flights are separated from other IFR flights and from VFR flights, VFR flights are separated from IFR flights and receive traffic information in respect of other VFR flights, is classified as;',
+    answers: [
+      { text: 'Airspace E.', correct: false },
+      { text: 'Airspace C.', correct: true },
+      { text: 'Airspace D.', correct: false },
+      { text: 'Airspace B.', correct: false }
+    ]
+  },
+  {
+    question: 'An ATS airspace where IFR and VFR flights are permitted, all flights are subject to air traffic control service and are separated from each other is classified as;',
+    answers: [
+      { text: 'Airspace C.', correct: false },
+      { text: 'Airspace B.', correct: true },
+      { text: 'Airspace D.', correct: false },
+      { text: 'Airspace E.', correct: false }
+    ]
+  },
+  {
+    question: 'An ATS airspace where IFR and VFR flights are permitted and all flights are subject to air traffic control service. IFR flights are separated from other IFR flights and receive traffic information in respect of VFR flights. VFR flights receive traffic information in respect of all other flights, is classified as;',
+    answers: [
+      { text: 'Airspace A.', correct: false },
+      { text: 'Airspace D.', correct: true },
+      { text: 'Airspace E.', correct: false },
+      { text: 'Airspace B.', correct: false }
+    ]
+  },
+  {
+    question: 'An ATS airspace where IFR and VFR are permitted IFR flights are subject to Air Traffic Control Service and are separated from other IFR flights. All flights receive traffic information as far as is practical, is classified as;',
+    answers: [
+      { text: 'Airspace A.', correct: false },
+      { text: 'Airspace B.', correct: false },
+      { text: 'Airspace E.', correct: true },
+      { text: 'Airspace D.', correct: false }
+    ]
+  },
+  {
+    question: 'An ATS airspace where IFR and VFR flights are permitted, all participating IFR flights receive an air traffic advisory service and all flights receive flight information service if requested, is classified;',
+    answers: [
+      { text: 'Airspace D.', correct: false },
+      { text: 'Airspace G.', correct: false },
+      { text: 'Airspace E.', correct: false },
+      { text: 'Airspace F.', correct: true }
+    ]
+  },
+  {
+    question: 'An ATS airspace where IFR and VFR are permitted and receive flight information service if requested, is classified as;',
+    answers: [
+      { text: 'Airspace G.', correct: true },
+      { text: 'Airspace F.', correct: false },
+      { text: 'Airspace C.', correct: false },
+      { text: 'Airspace E.', correct: false }
+    ]
+  },
+  {
+    question: 'An integrated aeronautical information package consists of the following elements;',
+    answers: [
+      { text: 'AIP, supplements to AIP, NOTAM and PIB, AIC and checklist summaries.', correct: false },
+      { text: 'AIP, including amendment service, supplements to AIP, NOTAM, AIC, AIRAC.', correct: false },
+      { text: 'AIP, including amendment service, supplements to AIP, NOTAM, AIC and checklist summaries.', correct: false },
+      { text: 'AIP, including amendment service, supplements to AIP, NOTAM and pre-flight information bulletin (PIB), AIC, checklists and summaries.', correct: true }
+    ]
+  },
+  {
+    question: 'The identification of each prohibited, restricted and danger area shall be composed by;',
+    answers: [
+      { text: 'the nationality letters for location indicators assigned to the state or territory, followed the letters P, R and D and figures.', correct: true },
+      { text: 'the letters P (Prohibited), R (Restricted) and D (Dangerous) for the area concerned and figures.', correct: false },
+      { text: 'the letters P (Prohibited), R (Restricted) and D (Dangerous) followed by figures.', correct: false },
+      { text: 'the nationality letters for the location indicators assigned to the state, followed by P, R and D.', correct: false }
+    ]
+  },
+  {
+    question: 'In order to avoid confusion , the identification numbers given to each prohibited area , restricted area and danger area shall not be re-used for a period of;',
+    answers: [
+      { text: 'at least 6 months after cancellation of the area to which they refer.', correct: false },
+      { text: 'at least 2 months after cancellation of the area to which they refer.', correct: false },
+      { text: 'at least one year after cancellation of the area to which they refer.', correct: true },
+      { text: 'at least 3 months after cancellation of the area to which they refer.', correct: false }
+    ]
+  },
+  {
+    question: 'Temporary changes of “long duration” and information of “short duration” with extensive text and/or graphics are published as AIP supplements. It is considered a long duration;',
+    answers: [
+      { text: 'six months or longer.', correct: false },
+      { text: 'three months or longer.', correct: true },
+      { text: 'one year or longer.', correct: false },
+      { text: 'two months or longer.', correct: false }
+    ]
+  },
+  {
+    question: 'Operationally significant changes to the AIP shall be published in accordance with;',
+    answers: [
+      { text: 'AIRAC procedures and identified by the acronym AIRAC.', correct: true },
+      { text: 'NOTAM procedures and identified by acronym NOTAM followed by a number.', correct: false },
+      { text: 'AIP supplements and shall be clearly identified.', correct: false },
+      { text: 'AIC procedures and identified by the acronym AIC followed by a number.', correct: false }
+    ]
+  },
+  {
+    question: 'A checklist of AIP supplements currently in force shall be issued at intervals of;',
+    answers: [
+      { text: 'not more than three months.', correct: false },
+      { text: 'not more than one month.', correct: true },
+      { text: 'not more than 2 months.', correct: false },
+      { text: 'not more than 28 days.', correct: false }
+    ]
+  },
+  {
+    question: 'AIP. SIGMET information can be found in which part of the AIP?',
+    answers: [
+      { text: 'MET', correct: false },
+      { text: 'GEN', correct: true },
+      { text: 'AD', correct: false },
+      { text: 'ENR', correct: false }
+    ]
+  },
+  {
+    question: 'AIP. Which part of the AIP contains information relating to existing prohibited , restricted and danger areas?',
+    answers: [
+      { text: 'ENR', correct: true },
+      { text: 'The AIP does not contain this information', correct: false },
+      { text: 'GEN', correct: false },
+      { text: 'AD', correct: false }
+    ]
+  },
+  {
+    question: 'Unaccompanied baggage carried by air shall be cleared under the procedure applicable to ;',
+    answers: [
+      { text: 'accompanied baggage or under another simplified customs procedure distinct from that normally applicable to other cargo.', correct: true },
+      { text: 'cargo but is free from any kind of declaration forms.', correct: false },
+      { text: 'cargo and is covered by a traffic document.', correct: false },
+      { text: 'cargo but clearance documents provided by airlines shall be completed by the passenger prior to shipment.', correct: false }
+    ]
+  },
+  {
+    question: 'The documents for entry and departure of aircraft;',
+    answers: [
+      { text: 'are accepted in hand-written block lettering in ink.', correct: true },
+      { text: 'has to be typewritten.', correct: false },
+      { text: 'are accepted at the contracting state discretion.', correct: false },
+      { text: 'has to be typewritten or produced by electronic data processing techniques.', correct: false }
+    ]
+  },
+  {
+    question: 'When a person is found inadmissible and is returned to the operator for transport away from the territory of the state , the operator;',
+    answers: [
+      { text: 'shall not be preclude from recovering from such person any transportation costs arising from his (her) inadmissibility.', correct: true },
+      { text: 'is not responsible for the person inadmissible for entry in the receiving state.', correct: false },
+      { text: 'and the state of the operator are both responsible for the person inadmissible.', correct: false },
+      { text: 'shall not recover from such person any transportation costs arising from his (her) inadmissibility.', correct: false }
+    ]
+  },
+  {
+    question: 'The ICAO annex which deals with entry and departure of persons and their baggage in international flights is;',
+    answers: [
+      { text: 'Annex 6.', correct: false },
+      { text: 'Annex 15.', correct: false },
+      { text: 'Annex 9.', correct: true },
+      { text: 'Annex 8.', correct: false }
+    ]
+  },
+  {
+    question: 'The ICAO annex which deals with entry and departure of cargo and other articles on international flights is;',
+    answers: [
+      { text: 'Annex 8.', correct: false },
+      { text: 'Annex 16.', correct: false },
+      { text: 'Annex 9.', correct: true },
+      { text: 'Annex 15.', correct: false }
+    ]
+  },
+  {
+    question: 'The aircraft commander , when he has reasonable grounds to believe that a person has committed or is about to commit , on board the aircraft , an offence against penal law;',
+    answers: [
+      { text: 'may require the assistance of passengers to restrain such person.', correct: false },
+      { text: 'may request such person to disembark.', correct: false },
+      { text: 'may not require or authorise the assistance of other crew members.', correct: false },
+      { text: 'may deliver such person to the competent authorities.', correct: true }
+    ]
+  },
+  {
+    question: 'The Rome Convention and later amendments deals with;',
+    answers: [
+      { text: 'regulation of transportation of dangerous goods.', correct: false },
+      { text: 'offences and certain other acts committed on board aircraft.', correct: false },
+      { text: 'damage caused by any aircraft to third parties on the surface.', correct: false },
+      { text: 'damage caused by foreign aircraft to third parties on the surface.', correct: true }
+    ]
+  },
+  {
+    question: 'The convention signed by the states and moved by a desire to ensure adequate compensation for persons who suffer damage caused on the surface by foreign aircraft is;',
+    answers: [
+      { text: 'the Paris Convention.', correct: false },
+      { text: 'the Rome Convention.', correct: true },
+      { text: 'the Warsaw Convention.', correct: false },
+      { text: 'the Tokyo Convention.', correct: false }
+    ]
+  },
+  {
+    question: 'Any person who suffers damage on the surface shall , upon proof only that damage was caused by an aircraft in flight or by any person or thing falling therefore will be entitled to compensation as provided by;',
+    answers: [
+      { text: 'the Rome Convention.', correct: true },
+      { text: 'the Warsaw Convention.', correct: false },
+      { text: 'the Chicago Convention.', correct: false },
+      { text: 'the Montreal Convention.', correct: false }
+    ]
+  },
+  {
+    question: 'The convention on offences and certain acts committed on board aircraft, is;',
+    answers: [
+      { text: 'the convention of Chicago.', correct: false },
+      { text: 'the convention of Rome.', correct: false },
+      { text: 'the convention of Tokyo.', correct: true },
+      { text: 'the convention of Paris.', correct: false }
+    ]
+  },
+  {
+    question: 'The convention which deals with offences against penal law, is;',
+    answers: [
+      { text: 'the convention of Tokyo.', correct: true },
+      { text: 'the convention of Warsaw.', correct: false },
+      { text: 'the convention of Madrid.', correct: false },
+      { text: 'the convention of Rome.', correct: false }
+    ]
+  },
+  {
+    question: 'The holder of a pilot licence when acting as co-pilot of an aircraft required to be operated with a co-pilot, shall be entitled to be credit with not more than;',
+    answers: [
+      { text: '50 % of the co-pilot flight time towards the total flight time required for a higher grade of pilot licence.', correct: true },
+      { text: '60 % of the co-pilot flight time towards , the total flight time required for a higher grade of a pilot licence.', correct: false },
+      { text: '40 % of the co-pilot flight time towards , the total flight time required for a higher grade of a pilot licence.', correct: false },
+      { text: '100 hours of flying time required for a higher grade of a pilot licence.', correct: false }
+    ]
+  },
+  {
+    question: 'The age of an applicant for a commercial pilot licence shall not be less than;',
+    answers: [
+      { text: '17 years of age.', correct: false },
+      { text: '16 years of age.', correct: false },
+      { text: '18 years of age.', correct: true },
+      { text: '21 years of age.', correct: false }
+    ]
+  },
+  {
+    question: 'An applicant for a commercial pilot licence shall hold;',
+    answers: [
+      { text: 'a current class I medical assessment.', correct: true },
+      { text: 'a current class III medical assessment.', correct: false },
+      { text: 'a current class II medical assessment.', correct: false },
+      { text: 'a current class medical assessment as prescribed by the state issuing the licence.', correct: false }
+    ]
+  },
+  {
+    question: 'An applicant for a commercial pilot licence-aeroplane shall have completed not less than ........ hours of cross country flight time as pilot in command including a cross country flight totalling not less than ........ km ( ........ NM ) , in the course of which full stop landings at two different aerodromes shall be made. The hours and distance referred are;',
+    answers: [
+      { text: '10 hours and 270 km ( 150 NM )', correct: false },
+      { text: '15 hours and 540 km ( 300 NM )', correct: false },
+      { text: '20 hours and 270 km ( 150 NM )', correct: false },
+      { text: '20 hours and 540 km ( 300 NM )', correct: true }
+    ]
+  },
+  {
+    question: 'An applicant for a commercial pilot licence aeroplane shall have completed in aeroplanes not less than ;',
+    answers: [
+      { text: '15 hours of cross country flight time as pilot-in-command including a cross country flight not less than 540 km ( 300 NM ).', correct: false },
+      { text: '20 hours of cross country flight time as pilot-in-command including a cross country flight not less than 540 km ( 300 NM ).', correct: true },
+      { text: '10 hours of cross country flight time as pilot-in-command including a cross country flight not less than 540 km ( 300 NM ).', correct: false },
+      { text: '25 hours of cross country flight time as pilot-in-command including a cross country flight not less than 540 km ( 300 NM ).', correct: false }
+    ]
+  },
+  {
+    question: 'The applicant for an Airline Transport Pilot Licence shall have completed in aeroplanes not less than ......... hours of cross- country flight time, of which not less than ......... hours shall be as pilot-in command or co-pilot performing, under the supervision of the pilot in command, the duties and functions of a pilot in command, provided that the method of supervision employed is acceptable to the licensing authority. The state above hours are respectively;',
+    answers: [
+      { text: '200 hours and 75 hours', correct: false },
+      { text: '250 hours and 10 hours', correct: false },
+      { text: '200 hours and 100 hours', correct: true },
+      { text: '150 hours and 75 hours', correct: false }
+    ]
+  },
+  {
+    question: 'An applicant holding a private or commercial pilot licence aeroplane for the issue of an instrument rating , shall have completed ..... hours of cross-country flight time as pilot-in-command of aircraft in categories acceptable to the licensing Authority , of which not less than ..... hours shall be in aeroplanes. The said hours , are respectively;',
+    answers: [
+      { text: '40 hours and 15 hours', correct: false },
+      { text: '50 hours and 10 hours', correct: true },
+      { text: '40 hours and 10 hours', correct: false },
+      { text: '50 hours and 15 hours', correct: false }
+    ]
+  },
+  {
+    question: 'In certain circumstances a medical examination may be deferred at the discretion of the licensing authority , provided that such deferment shall only be made as an exception and shall not exceed;',
+    answers: [
+      { text: 'a single period of six months in the case of a flight crew member of an aircraft engaged in commercial operations.', correct: false },
+      { text: 'two consecutive periods each of three months in the case of a flight crew member of an aircraft engaged in non commercial operations.', correct: false },
+      { text: 'a single period of six months in the case of a flight crew member of an aircraft engaged in non commercial operations.', correct: true },
+      { text: 'in the case of a private pilot , a single period of 12 months.', correct: false }
+    ]
+  },
+  {
+    question: 'The duration of the period of currency of a medical assessment shall begin on the date ;',
+    answers: [
+      { text: 'the licence is issued or renewed.', correct: false },
+      { text: 'the medical assessment is issued.', correct: true },
+      { text: 'the licence is delivered to the pilot.', correct: false },
+      { text: 'the licence is issued or validated.', correct: false }
+    ]
+  },
+  {
+    question: 'When a contracting state renders valid a licence issued by another contracting state the validity of the authorisation ;',
+    answers: [
+      { text: 'shall not extend beyond the period of validity of the licence other than for use in private flights.', correct: false },
+      { text: 'shall not extend more than 15 days from the date of the licence.', correct: false },
+      { text: 'shall not extend beyond the period of validity of the licence.', correct: true },
+      { text: 'the Contracting state rendering a licence valid may extend the date of the validity at its own discretion.', correct: false }
+    ]
+  },
+  {
+    question: 'Type ratings shall be established ;',
+    answers: [
+      { text: 'all the answers are correct.', correct: false },
+      { text: 'only aircraft certificated for operation with a minimum crew of at least two pilots.', correct: false },
+      { text: 'for any type of aircraft whenever considered necessary by the authority.', correct: true },
+      { text: 'only for aircraft certificated for operation with a minimum crew of at least two pilots and each type of helicopter.', correct: false }
+    ]
+  },
+  {
+    question: 'The holder of a pilot licence when acting as co-pilot performing under the supervision of the pilot in command the functions and duties of a pilot in command shall be entitled to be credit ;',
+    answers: [
+      { text: 'in full with his flight but not more than 300 hours towards the total time required for a higher grade of pilot licence.', correct: false },
+      { text: '50% of his flight time towards the total time required for higher grade of pilot licence.', correct: false },
+      { text: 'the flight time towards the total time required for higher grade of pilot licence in accordance with the requirements of the licensing authority.', correct: false },
+      { text: 'in full with his flight time towards the total time required for higher grade of pilot licence.', correct: true }
+    ]
+  },
+  {
+    question: 'An applicant for a commercial pilot licence-aeroplane shall have completed in aeroplanes not less than ;',
+    answers: [
+      { text: '200 hours of flight time or 150 hours if completed during a course of approved training as a pilot of aeroplanes', correct: true },
+      { text: '150 hours of flight time and 100 hours as pilot in command.', correct: false },
+      { text: '200 hours of flight time and 70 hours as pilot in command.', correct: false },
+      { text: '200 hours of flight time and 80 hours as pilot in command.', correct: false }
+    ]
+  },
+  {
+    question: 'An applicant for a commercial pilot licence shall have completed in aeroplanes not less than ;',
+    answers: [
+      { text: '20 hours of instrument instruction time of which not more than 5 hours may be instrument ground time.', correct: false },
+      { text: '10 hours of instrument instruction time of which not more than 5 hours may be instrument ground time.', correct: true },
+      { text: '15 hours of instrument time of which not more than 5 hours as pilot in command.', correct: false },
+      { text: '20 hours of instrument instruction time of which not more than 10 hours may be instrument ground time.', correct: false }
+    ]
+  },
+  {
+    question: 'The national civil aviation security programme shall be established by ;',
+    answers: [
+      { text: 'ECAC.', correct: false },
+      { text: 'each contracting state.', correct: true },
+      { text: 'ICAO.', correct: false },
+      { text: 'ICAO and other organisations including the contracting state concerned.', correct: false }
+    ]
+  },
+  {
+    question: 'Each member state should designate an appropriate authority with its administration to be responsible for the development implementation and maintenance of a national aviation security programme. This programme should apply ;',
+    answers: [
+      { text: 'to all international civil air transport including aircraft engaged solely in the carriage of cargo and yet to domestic flights at the discretion of each member state.', correct: true },
+      { text: 'only to passengers and aircrew in international civil transport flights.', correct: false },
+      { text: 'only to passengers and aircrew in international civil transport flights and domestic flights.', correct: false },
+      { text: 'only to all international civil transport including aircraft engaged solely in the carriage of cargo.', correct: false }
+    ]
+  },
+  {
+    question: 'When mixing or contact does take place between passengers subjected to security control and other persons not subjected to such control after the security screening points at airports serving international civil aviation have been passed ;',
+    answers: [
+      { text: 'only the passengers cabin baggage are to be re screened.', correct: false },
+      { text: 'the passengers concerned and their cabin baggage shall be rescreened before boarding an aircraft.', correct: true },
+      { text: 'the persons not subjected to security control shall be identified.', correct: false },
+      { text: 'only the passengers are to be re screened.', correct: false }
+    ]
+  },
+  {
+    question: 'Annex 17 - Security. Each Contracting State shall ensure that the appropriate authority arranges for the supporting resources and facilities required by the aviation security services to be available ;',
+    answers: [
+      { text: 'on a common basis for all airports within the State.', correct: false },
+      { text: 'at each airport serving international civil aviation.', correct: true },
+      { text: 'for administrative staff of each airport within that State.', correct: false },
+      { text: 'for every airline operating in that State.', correct: false }
+    ]
+  },
+  {
+    question: 'When a member state allows police officers , security staff , bodyguards or other agents of foreign states to carry weapons in their territory for the protection of aircraft in flight , permission for the carriage of weapons should be conditional upon ;',
+    answers: [
+      { text: 'notification of the pilot in command of a decision to permit a weapon to be carried on board his aircraft only.', correct: false },
+      { text: 'agreement between the state of embarcation and the state of destination.', correct: false },
+      { text: 'agreement between the state of embarcation and the airport of arrival.', correct: false },
+      { text: 'prior notification by the state of embarcation to the foreign state in which the weapons will be carried on the airport of arrival and notification of the pilot in command of a decision to permit a weapon to be carried on board his aircraft.', correct: true }
+    ]
+  },
+  {
+    question: 'Member states should introduce specific security measures for the air transport of the following groups of potentially disruptive passengers defined below ;',
+    answers: [
+      { text: 'Deportees and persons in lawful custody only.', correct: false },
+      { text: 'Deportees , inadmissible persons and persons in lawful custody.', correct: true },
+      { text: 'Deportees and inadmissible persons only.', correct: false },
+      { text: 'None of the answers is correct.', correct: false }
+    ]
+  },
+  {
+    question: 'For the transport of potentially disruptive passengers some supplementary safeguards are to be observed such as ;',
+    answers: [
+      { text: 'the boarding will be at the pilot in command discretion.', correct: false },
+      { text: 'boarding prior to all passengers.', correct: true },
+      { text: 'boarding after to all other passengers.', correct: false },
+      { text: 'the boarding has to be done at the state discretion.', correct: false }
+    ]
+  },
+  {
+    question: 'When on a RNP 1 route is indicated A342 Z , means that all turns shall be made within the allowable RNP tolerance of a tangential arc between the straight leg segments with a radius of ;',
+    answers: [
+      { text: '25 NM on the route between 30° and 90° at and below FL190.', correct: false },
+      { text: '15 NM on the route between 30° and 90° at and above FL 200.', correct: false },
+      { text: '22.5 NM on the route between 30° and 90° at and above FL 250.', correct: false },
+      { text: '15 NM on the route between 30° and 90° at and below FL 190.', correct: true }
+    ]
+  },
+  {
+    question: 'Concerning to RNP ( Required Navigation Performance ) types , the indication RNP 4 , represents a navigation accuracy of ;',
+    answers: [
+      { text: 'plus or minus 4 NM on a 90 per cent containment basis.', correct: false },
+      { text: 'plus or minus 4 miles on a 90 per cent containment basis.', correct: false },
+      { text: 'plus or minus 4 NM on a 98 per cent containment basis.', correct: false },
+      { text: 'plus or minus 4 NM on a 95 per cent containment basis.', correct: true }
+    ]
+  },
+  {
+    question: 'When on a RNP 1 route is indicated B235 Y , means that all turns shall be made within the allowable RNP tolerance of a tangential arc between the straight leg segments defined with a radius of ;',
+    answers: [
+      { text: '22.5 NM between 30° and 90° at and above FL260.', correct: false },
+      { text: '20 NM on the route between 30° and 90° at and above FL200.', correct: false },
+      { text: '22.5 NM between 30° and 90° at and above FL200.', correct: true },
+      { text: '25.0 NM on the route between 30° and 90° at and above FL 250.', correct: false }
+    ]
+  },
+  {
+    question: 'The ATIS broadcast message should , whenever practicable , not exceed ;',
+    answers: [
+      { text: '3 minutes.', correct: false },
+      { text: '30 seconds.', correct: true },
+      { text: '2 minutes.', correct: false },
+      { text: '1 minute.', correct: false }
+    ]
+  },
+  {
+    question: 'ATIS-Updating. Whenever ATIS is provided , the broadcast information shall be updated ;',
+    answers: [
+      { text: 'at least every half an hour independently of any significant change.', correct: false },
+      { text: 'immediately a significant change occurs.', correct: true },
+      { text: 'as prescribed by the meteorological office.', correct: false },
+      { text: 'as prescribed by the state.', correct: false }
+    ]
+  },
+  {
+    question: 'Whenever ATIS is provided , the preparation and dissemination of the ATIS message shall be the responsibility of ;',
+    answers: [
+      { text: 'the air traffic services.', correct: true },
+      { text: 'the unit as prescribed the states.', correct: false },
+      { text: 'the meteorological office serving the aerodrome(s).', correct: false },
+      { text: 'both air traffic services and the meteorological office.', correct: false }
+    ]
+  },
+  {
+    question: 'ATIS broadcast ;',
+    answers: [
+      { text: 'shall not be transmitted on the voice channel of an ILS.', correct: true },
+      { text: 'shall not be transmitted on the voice of a VOR.', correct: false },
+      { text: 'shall be transmitted on the voice channel of an ILS , on a discrete VHF frequency or on the voice channel of a VOR.', correct: false },
+      { text: 'Shall only be transmitted on a discrete VHF frequency.', correct: false }
+    ]
+  },
+  {
+    question: 'Air traffic services unit clocks and other time recording devices shall be checked as necessary to ensure correct time to within plus or minus ;',
+    answers: [
+      { text: '10 seconds of UTC at all times.', correct: false },
+      { text: '15 seconds of UTC at all times.', correct: false },
+      { text: '1 minute of UTC at all times.', correct: false },
+      { text: '30 seconds of UTC at all times.', correct: true }
+    ]
+  },
+  {
+    question: 'An information issued by a meteorological watch office concerning the occurrence or expected occurrence of specified en-route weather phenomena which may affect the safety of low-level aircraft operations and which was not already included in the forecast issued for low level flights in the flight information region concerned or subarea thereof is ;',
+    answers: [
+      { text: 'a SIGMET information.', correct: false },
+      { text: 'a NOTAM.', correct: false },
+      { text: 'an AIRMET information.', correct: true },
+      { text: 'an En-Route Meteo Report.', correct: false }
+    ]
+  },
+  {
+    question: 'Except in some special cases the establishment of change-over points should be limited to route segments of ;',
+    answers: [
+      { text: '100 NM or more.', correct: false },
+      { text: '60 NM or more.', correct: true },
+      { text: '50 NM or more.', correct: false },
+      { text: '75 NM or more.', correct: false }
+    ]
+  },
+  {
+    question: 'Required Navigation Performance ( RNP ) shall be prescribed ;',
+    answers: [
+      { text: 'by regional air navigation agreements.', correct: false },
+      { text: 'by states but not on the basis of regional air agreements.', correct: false },
+      { text: 'by ICAO on the basis of regional air navigation agreements.', correct: false },
+      { text: 'by states on the basis of regional air navigation agreements.', correct: true }
+    ]
+  },
+  {
+    question: 'Flight Information Service shall be provided to aircraft in order to avoid collision hazards when operating in airspace classes ;',
+    answers: [
+      { text: 'F only.', correct: false },
+      { text: 'A , B , C , D , E , F and G.', correct: false },
+      { text: 'F and G only.', correct: false },
+      { text: 'C , D , E , F and G.', correct: true }
+    ]
+  },
+  {
+    question: 'ICAO Annex 7 - Nationality and registration. The registration mark shall be letters , numbers or a combination of letters and numbers and shall be that assigned by the ;',
+    answers: [
+      { text: 'Ministry of Transport and the Ministry of Defense in the state of registry.', correct: false },
+      { text: 'the International Telecommunication Union.', correct: false },
+      { text: 'the International Civil Aviation Organisation.', correct: false },
+      { text: 'the state of registry or common mark registering authority.', correct: true }
+    ]
+  },
+  {
+    question: 'ICAO Annex 7 - Nationality and registration. When letters are used for the registration mark , combinations shall not be used which might be confused with the ;',
+    answers: [
+      { text: 'letters used for ICAO identification documents.', correct: false },
+      { text: 'five letter combinations used in the international code of signals.', correct: true },
+      { text: 'four letter combinations beginning with Q.', correct: false },
+      { text: 'three letter combinations used in the international code of signals.', correct: false }
+    ]
+  },
+  {
+    question: 'When letters are used for registration mark combinations shall not be used which might be confused with urgent signals for example ;',
+    answers: [
+      { text: 'LLL.', correct: false },
+      { text: 'RCC.', correct: false },
+      { text: 'FFF.', correct: false },
+      { text: 'TTT.', correct: true }
+    ]
+  },
+  {
+    question: 'When letters are used for registration mark combinations shall not be used which might be confused with urgent signals for example ;',
+    answers: [
+      { text: 'DDD.', correct: false },
+      { text: 'LLL.', correct: false },
+      { text: 'RCC.', correct: false },
+      { text: 'PAN.', correct: true }
+    ]
+  },
+  {
+    question: 'When letters are used for the registration mark combinations shall not be used which might be confused with urgent or distress signals for example ;',
+    answers: [
+      { text: 'DDD.', correct: false },
+      { text: 'LLL.', correct: false },
+      { text: 'XXX.', correct: true },
+      { text: 'RCC.', correct: false }
+    ]
+  },
+  {
+    question: 'The height of the marks under the wings of heavier than air aircraft shall be ;',
+    answers: [
+      { text: 'at least 75 centimetres.', correct: false },
+      { text: 'at least 50 centimetres.', correct: true },
+      { text: 'at least 60 centimetres.', correct: false },
+      { text: 'at least between 40 centimetres and 50 centimetres.', correct: false }
+    ]
+  },
+  {
+    question: 'The height of the marks on the fuselage ( or equivalent structure ) and on the vertical tail surfaces of heavier than air aircraft shall be ;',
+    answers: [
+      { text: 'at least between 20 centimetres and 40 centimetres.', correct: false },
+      { text: 'at least 20 centimetres.', correct: false },
+      { text: 'at least 40 centimetres.', correct: false },
+      { text: 'at least 30 centimetres.', correct: true }
+    ]
+  },
+  {
+    question: 'The state of design shall ensure that , there exists a continuing structural integrity program to ensure the airworthiness of the aeroplane , which includes specific information concerning corrosion prevention and control , in respect of aeroplanes ;',
+    answers: [
+      { text: 'over 5.700 kg maximum certificate take-off mass.', correct: true },
+      { text: 'up to 5.700 kg maximum certificate take-off mass.', correct: false },
+      { text: 'over 5.700 kg maximum certificate take-off and landing mass.', correct: false },
+      { text: 'up to 5.700 kg maximum certificate take-off and landing mass.', correct: false }
+    ]
+  },
+  {
+    question: 'When an aircraft has sustained damage , the aircraft shall be allowed to resume its flight , if ;',
+    answers: [
+      { text: 'the state of design and the state of manufacture inform the state of registry that the aircraft is still airworthy.', correct: false },
+      { text: 'the state of registry , the state of design and the state of manufacture consider that the aircraft is still airworthy.', correct: false },
+      { text: 'the state of registry considers that the damage sustained is of a nature such that the aircraft is still airworthy.', correct: true },
+      { text: 'the state of manufacture informs the state of registry that the damage sustained is of a nature such that the aircraft is still airworthy.', correct: false }
+    ]
   }
 ];
 
@@ -1562,25 +3155,31 @@ function showScore() {
     <p>Wrong Answers: ${wrongAnswers}</p>
     <p>Your Score: ${finalScore.toFixed(2)}% ${passOrFail}</p>
   `;
+    
+    // Display "INCORRECT ANSWERS" heading only if there are wrong answers
+      if (wrongAnswers > 0) {
+        const incorrectHeading = document.createElement('h2');
+        incorrectHeading.innerText = 'WRONG ANSWERS';
+        incorrectHeading.style.color = 'red';
+        scoreContainer.appendChild(incorrectHeading);
+      }
 
-  // Display a summary of user's answers
-  const summary = document.createElement('div');
-  userChoices.forEach(choice => {
-    const questionSummary = document.createElement('div');
-    
-    // If the user's answer is wrong, apply red font color
-    const answerClass = choice.isCorrect ? '' : 'style="color:red;"';
-    
-    questionSummary.innerHTML = `
-      <p><strong>Question:</strong> ${choice.question}</p>
-      <p ${answerClass}><strong>Your Answer:</strong> ${choice.selectedAnswer}</p>
-      <p><strong>Correct Answer:</strong> ${choice.correctAnswer}</p>
-      <hr>
-    `;
-    
-    summary.appendChild(questionSummary);
-  });
-  scoreContainer.appendChild(summary);
+    // Display only wrong answers
+      const summary = document.createElement('div');
+      userChoices.forEach(choice => {
+        if (!choice.isCorrect) {  // Only display wrong answers
+          const questionSummary = document.createElement('div');
+          questionSummary.innerHTML = `
+            <p><strong>Question:</strong> ${choice.question}</p>
+            <p style="color:red;"><strong>Your Answer:</strong> ${choice.selectedAnswer}</p>
+            <p><strong>Correct Answer:</strong> ${choice.correctAnswer}</p>
+            <hr>
+          `;
+          summary.appendChild(questionSummary);
+        }
+      });
+
+      scoreContainer.appendChild(summary);
 }
 
 // Function to save the results to a local file
