@@ -1416,7 +1416,7 @@ const questions = [
     ]
   },
   {
-    question: 'A so-called “Visual Approach” can be performed;',
+    question: 'A so called “Visual Approach” can be performed;',
     answers: [
       { text: 'during IFR flights, if there is permanent sight on the movement area and the underlying ground.', correct: true },
       { text: 'during IFR flights, if the cloud base is 1000 ft more than the appropriate DA or MDA for that procedure.', correct: false },
@@ -1961,7 +1961,7 @@ const questions = [
       { text: 'at the discretion of the Authority of that Member State concerned for a period not exceeding one year, provided that the basic licence remains valid.', correct: true },
       { text: 'at the discretion of the Authority of the Member State concerned for a period not exceeding the period validity of basic licence.', correct: false },
       { text: 'at the discretion of the Authority of that Member State concerned for a period not exceeding one year.', correct: false },
-      { text: 'at the discretion of the Authority of that Member State concerned for a period not exceeding one year, provided that the basic licence remains valid.', correct: false }
+      { text: 'at the discretion of the Authority of that Member State concerned for a period not exceeding one year.', correct: false }
     ]
   },
   {
@@ -2953,6 +2953,222 @@ const questions = [
       { text: 'the state of registry considers that the damage sustained is of a nature such that the aircraft is still airworthy.', correct: true },
       { text: 'the state of manufacture informs the state of registry that the damage sustained is of a nature such that the aircraft is still airworthy.', correct: false }
     ]
+  },
+  {
+    question: 'When an aircraft is experiencing difficulties, triggering of the alert phase is the responsibility of;',
+    answers: [
+      { text: 'air traffic control and flight information centres.', correct: true },
+      { text: 'search and rescue co-ordination centres.', correct: false },
+      { text: 'control centres only.', correct: false },
+      { text: 'air traffic co-ordination centres.', correct: false }
+    ]
+  },
+  {
+    question: 'When an aircraft subjected to an unlawful interference has landed it shall notify by the most expeditious means of the State of registry of the aircraft and the State of the operator of the landing and shall similarly transmit all other relevant information to the;',
+    answers: [
+      { text: 'two aforementioned States, each State whose citizens suffered fatalities or injuries, each State whose citizens are known to be on board the aircraft and the ICAO.', correct: false },
+      { text: 'two aforementioned States, each State whose citizens suffered fatalities or injuries, each State whose citizens were detained as hostages, each State whose citizens are known to be on board the aircraft and the ICAO.', correct: true },
+      { text: 'two aforementioned States, each State whose citizens suffered fatalities or injuries on board the aircraft and the ICAO.', correct: false },
+      { text: 'two aforementioned States and the ICAO.', correct: false }
+    ]
+  },
+  {
+    question: "A notice providing information on Rules of the Air, Air Traffic Services, and Air Navigation Procedures and distributed in advance of its effective date is;",
+    answers: [
+      { text: "A NOTAM RAC.", correct: false },
+      { text: "An ATS NOTAM.", correct: false },
+      { text: "An Advisory NOTAM.", correct: false },
+      { text: "An AIRAC.", correct: true }
+    ]
+  },
+  {
+    question: "A separation minimum shall be applied between a light or MEDIUM aircraft and a HEAVY aircraft and between a LIGHT aircraft and a MEDIUM aircraft when the heavier aircraft is making a low or missed approach and the lighter aircraft is utilizing an opposite direction runway for takeoff, this minimum is;",
+    answers: [
+      { text: "1 minute.", correct: false },
+      { text: "2 minutes.", correct: true },
+      { text: "5 minutes.", correct: false },
+      { text: "3 minutes.", correct: false }
+    ]
+  },
+  {
+    question: "A State shall provide assistance to an aircraft subjected to an act of unlawful seizure. This assistance includes;",
+    answers: [
+      { text: "Provision of navigation aids, air traffic services, permission to land, and refuelling.", correct: false },
+      { text: "Provision of navigation aids, air traffic services, and permission to land.", correct: true },
+      { text: "Only permission to land.", correct: false },
+      { text: "Provision of navigation aids, air traffic services, permission to land, and catering for passengers.", correct: false }
+    ]
+  },
+  {
+    question: "A State shall take adequate measures for the safety of passengers and crew of an aircraft which is subjected to an act of unlawful interference;",
+    answers: [
+      { text: "Until their journey can be continued.", correct: true },
+      { text: "If requested by an individual passenger.", correct: false },
+      { text: "And arrange for them to return to their country of origin.", correct: false },
+      { text: "During a period of investigation.", correct: false }
+    ]
+  },
+  {
+    question: "Who is responsible for the initiation of an accident investigation?",
+    answers: [
+      { text: "The aircraft manufacturer.", correct: false },
+      { text: "The Operators of the same aircraft type.", correct: false },
+      { text: "The Authority of the State in which the accident took place.", correct: true },
+      { text: "The State of design and manufacturer.", correct: false }
+    ]
+  },
+  {
+    question: "The sole objective of the investigation of an accident or incident shall be the;",
+    answers: [
+      { text: "Prevention of accidents or incidents and establish the liability.", correct: false },
+      { text: "Prevention of accidents or incidents and to provide legal evidence for subsequent court cases.", correct: false },
+      { text: "Prevention of accidents or incidents.", correct: true },
+      { text: "Prevention of accidents or incidents and provide the manufacturer with investigation data for improvement of the design.", correct: false }
+    ]
+  },
+  {
+    question: "According to ICAO Annex 8, a certificate of airworthiness shall be renewed or shall remain valid subject to the;",
+    answers: [
+      { text: "Laws of the State in which it is operated.", correct: false },
+      { text: "Laws of the State of registry and operation.", correct: false },
+      { text: "Laws of the State of registry.", correct: true },
+      { text: "Requirements laid down by ICAO.", correct: false }
+    ]
+  },
+  {
+    question: "According to JAR-FCL, an applicant for a CPL (A) who has satisfactorily followed and completed an integrated flying training course shall have completed as a pilot of aeroplanes having a certificate of airworthiness issued or accepted by a JAA Member State at least;",
+    answers: [
+      { text: "150 hours of flight time.", correct: true },
+      { text: "200 hours of flight time plus 10 hours of instrument ground time.", correct: false },
+      { text: "150 hours of flight time plus 10 hours of instrument ground time.", correct: false },
+      { text: "200 hours of flight time.", correct: false }
+    ]
+  },
+  {
+    question: "According to JAR-FCL, an applicant for an IR(A) shall hold a PPL(A) including a night qualification or CPL(A) and shall have completed at least 50 hours;",
+    answers: [
+      { text: "Instructional flight time as student-pilot-in-command of aeroplanes.", correct: false },
+      { text: "Cross country flight time as a pilot of aeroplanes or helicopters of which at least 10 hours shall be in aeroplanes.", correct: true },
+      { text: "Instructional flight time as student-pilot-in-command of aeroplanes or helicopters of which at least 10 hours shall be in aeroplanes.", correct: false },
+      { text: "Cross country flight time as pilot-in-command in aeroplanes or helicopters of which at least 10 hours shall be in aeroplanes.", correct: false }
+    ]
+  },
+  {
+      question: "According to JAR-FCL, an applicant for ATPL(A) shall have completed as a pilot of aeroplane at least 1,500 hours of flight time, including;",
+      answers: [
+        { text: "500 hours in multi-pilot operations on aeroplanes type certificated in accordance with JAR/FAR 25 or JAR/FAR 23.", correct: true },
+        { text: "500 hours in multi-pilot operations on aeroplanes type certificated in accordance with JAR/FAR 25 or JAR/FAR 23, of which up to 150 hours may be as flight engineer.", correct: false },
+        { text: "500 hours in multi-pilot operations on aeroplanes type certificated in accordance with JAR/FAR 25 or JAR/FAR 23, as pilot-in-command.", correct: false },
+        { text: "500 hours in multi-pilot operations on aeroplanes type certificated in accordance with JAR/FAR 25 or JAR/FAR 23, including 200 hours of night flight as pilot-in-command or as co-pilot.", correct: false }
+      ]
+  },
+  {
+      question: "According to JAR-FCL, an applicant for ATPL(A) shall have demonstrated the ability to perform as pilot-in-command, the procedures and manoeuvres of an aeroplane type certificated for;",
+      answers: [
+        { text: "Operations by pilots under training.", correct: false },
+        { text: "The carriage of passengers at night.", correct: false },
+        { text: "A minimum crew of two pilots under IFR.", correct: true },
+        { text: "A minimum crew of two pilots plus a flight engineer.", correct: false }
+      ]
+  },
+  {
+      question: "According to JAR-FCL, an examiner’s authorisation is valid for;",
+      answers: [
+        { text: "The period of validity of the class/type rating.", correct: false },
+        { text: "Not more than two years.", correct: false },
+        { text: "Not more than three years.", correct: true },
+        { text: "The period of validity of the medical certificate.", correct: false }
+      ]
+  },
+  {
+      question: "According to JAR-FCL, an instrument rating is valid for;",
+      answers: [
+        { text: "Indefinitely.", correct: false },
+        { text: "The period of validity of the licence.", correct: false },
+        { text: "One year.", correct: true },
+        { text: "Two years.", correct: false }
+      ]
+  },
+  {
+      question: "According to JAR-FCL, class rating shall be established for single pilots aeroplanes not requiring a type rating, including;",
+      answers: [
+        { text: "All self-sustaining gliders.", correct: true },
+        { text: "All types of single-pilot, single-engine aeroplanes fitted with a turbojet engine.", correct: false },
+        { text: "Any other type of aeroplane if considered necessary.", correct: false },
+        { text: "Microlights having fixed wings and moveable aerodynamic control surfaces acting in all three dimensions.", correct: false }
+      ]
+  },
+  {
+      question: "According to JAR-FCL, establishment of separate type rating for aeroplanes will be assessed on the basis of three criteria. One of these three criteria is that the aeroplane has;",
+      answers: [
+        { text: "Handling characteristics that require additional flying or simulator training.", correct: true },
+        { text: "Handling characteristics that require the use of more than one crew member.", correct: false },
+        { text: "A certificate of airworthiness issued by the manufacturer.", correct: false },
+        { text: "A certificate of airworthiness issued by a non-member state.", correct: false }
+      ]
+  },
+  {
+      question: "According to JAR-FCL, medical certificates classes are;",
+      answers: [
+        { text: "1 and 2.", correct: true },
+        { text: "Class 1 only.", correct: false },
+        { text: "1, 2 and 3.", correct: false },
+        { text: "1, 2, 3 and 4.", correct: false }
+      ]
+  },
+  {
+      question: "According to JAR-FCL, single pilot single-engine class ratings are valid for;",
+      answers: [
+        { text: "One year.", correct: false },
+        { text: "Two years up to age 40 years then one year thereafter.", correct: false },
+        { text: "Five years after licence issue.", correct: false },
+        { text: "Two years.", correct: true }
+      ]
+  },
+  {
+      question: "According to JAR-FCL, successful completion of multi-crew co-operation (MCC) training shall be required to;",
+      answers: [
+        { text: "Obtain a professional pilot licence.", correct: false },
+        { text: "Revalidate any rating or licence.", correct: false },
+        { text: "Obtain the first class rating on multi-engine aeroplanes.", correct: false },
+        { text: "Obtain the first type rating on multi-pilot aeroplanes.", correct: true }
+      ]
+  },
+  {
+      question: "According to JAR-FCL, the aeroplane instructor categories recognised are;",
+      answers: [
+        { text: "FE(A)/TRE(A)/CRE(A)/IRE(A) and SFI authorisation.", correct: false },
+        { text: "FI(A) and IRI(A).", correct: false },
+        { text: "FI(A)/TRI(A)CRE(A)/IRE(A) and SFI authorisation.", correct: false },
+        { text: "FI(A)/TRI(A)/CRI(A)/IRI(A) ratings, SFI and MCCI authorisation.", correct: true }
+      ]
+  },
+  {
+      question: "According to JAR-FCL, the privileges of a newly qualified Flight Instructor are restricted to carrying out instruction under the supervision of a FI(A), approved for this purpose. The restrictions may be removed from the rating;",
+      answers: [
+        { text: "On the recommendation of the supervising FI(A) after the holder of the restricted FI(A) rating has completed a competency test.", correct: false },
+        { text: "On the recommendation of the supervising FI(A) after the holder of the restricted FI(A) rating has completed at least 100 hours flight instruction and, in addition, has supervised at least 25 student solo flights.", correct: true },
+        { text: "On the recommendation of the supervising FI(A) after the holder of the restricted FI(A) rating has supervised at least 100 solo flights.", correct: false },
+        { text: "On the recommendation of the supervising FI(A) after the holder of the restricted FI(A) rating has supervised at least 100 solo flights and completed a competency test.", correct: false }
+      ]
+  },
+  {
+      question: "According to JAR-FCL, the privileges of the holder of an unrestricted FI(A) rating are to conduct flight instruction for the issue of a CPL(A);",
+      answers: [
+        { text: "Provided that the FI(A) has completed not less than 15 hours on the relevant type in the preceding 12 months.", correct: false },
+        { text: "Provided that the FI(A) has completed 200 hours of flight instruction.", correct: false },
+        { text: "Provided that the FI(A) has completed at least 500 hours of flight time as a pilot of aeroplanes including at least 200 hours of flight instruction.", correct: true },
+        { text: "Without restriction.", correct: false }
+      ]
+  },
+  {
+      question: "According to JAR-FCL, the validity of type ratings and multi-engine class ratings will be one year from the date;",
+      answers: [
+        { text: "Of the last medical certificate.", correct: false },
+        { text: "Of issue.", correct: true },
+        { text: "Of the skill test.", correct: false },
+        { text: "The application is received by the Authority.", correct: false }
+      ]
   }
 ];
 
