@@ -10,6 +10,9 @@ const progressText = document.getElementById('progress-text');
 //const timerElement = document.getElementById('time');
 const saveButton = document.getElementById('save-btn');
 const sendButton = document.getElementById('send-btn');
+const startQuestionInput = document.getElementById('start-question');
+const endQuestionInput = document.getElementById('end-question');
+const toggleHighlightButton = document.getElementById('toggle-highlight-btn');
 
 let shuffledQuestions, currentQuestionIndex;
 let score = 0;
@@ -19,9 +22,10 @@ let userChoices = []; // To store the user's choices
 let selectedAnswerText = null; // To store the last selected answer
 let correctAnswerText = null; // To store the correct answer for the current question
 let numQuestionsToSolve; // Number of questions user wants to solve
+let highlightEnabled = false;
 
 const questions = [
-    
+  
     {
         question: "A braking action given by ATS of 0.25 and below is;",
         answers: [
@@ -585,9 +589,9 @@ const questions = [
       question: "Aeronautical Ground Lights on and in the vicinity of aerodromes may be turned off, provided that they can be brought back into operation before the expected arrival of an aircraft in at least;",
       answers: [
         { text: "30 minutes.", correct: false },
-        { text: "one hour.", correct: false },
+        { text: "one hour.", correct: true },
         { text: "5 minutes.", correct: false },
-        { text: "15 minutes.", correct: true }
+        { text: "15 minutes.", correct: false }
       ]
     },
     {
@@ -4941,9 +4945,44 @@ const questions = [
       ]
     }
 
-           
 ];
-  
+
+toggleHighlightButton.addEventListener('click', () => {
+    // Toggle the highlightEnabled state between true and false
+    highlightEnabled = !highlightEnabled;
+
+    // Update the button text and apply appropriate style
+    toggleHighlightButton.textContent = highlightEnabled ? "Practice mode ON" : "Practice mode OFF";
+    
+    toggleHighlightButton.innerHTML = highlightEnabled
+            ? 'Practice mode <span style="color: green; font-weight: bold;">ON</span>'
+            : 'Practice mode <span style="color: red; font-weight: bold;">OFF</span>';
+    
+    // Toggle background color based on the highlight status
+    if (highlightEnabled) {
+        
+        highlightCorrectAnswer(); // Call function to highlight the correct answer
+    } else {
+        
+        clearHighlighting(); // Call function to remove any existing highlighting
+    }
+});
+
+function highlightCorrectAnswer() {
+    if (highlightEnabled) {
+        Array.from(answerButtonsElement.children).forEach(button => {
+            if (button.dataset.correct === "true") {
+                button.classList.add('correct'); // Add a class to highlight
+            }
+        });
+    }
+}
+
+function clearHighlighting() {
+    Array.from(answerButtonsElement.children).forEach(button => {
+        button.classList.remove('correct'); // Remove the highlight class
+    });
+}
 
 
 startButton.addEventListener('click', startQuiz);
@@ -4974,35 +5013,39 @@ function startQuiz() {
 }
 
 document.getElementById('submit-password-btn').addEventListener('click', () => {
-  const enteredPassword = document.getElementById('quiz-password').value;
-    numQuestionsToSolve = document.getElementById('num-questions').value;
+    // Retrieve the password, range, and total questions
+    const enteredPassword = document.getElementById('quiz-password').value;
+    const startQuestionInput = document.getElementById('start-question');
+    const endQuestionInput = document.getElementById('end-question');
+    const start = parseInt(startQuestionInput.value) - 1; // Convert to 0-based index
+    const end = parseInt(endQuestionInput.value);
+    const totalQuestions = questions.length;
 
-  if (enteredPassword !== "1234") {
-    alert("Incorrect password. You cannot start the quiz.");
-    return; // Exit if password is wrong
-  }
+    // Check if the password is correct
+    if (enteredPassword !== "1234") {
+        alert("Incorrect password. You cannot start the quiz.");
+        return; // Exit if password is wrong
+    }
 
-  // If password is correct, hide the password container and start the quiz
-  document.getElementById('password-container').classList.add('hide');
-  questionContainerElement.classList.remove('hide');
-  shuffledQuestions = shuffleArray(questions);
-    // Convert the number of questions to solve into an integer, unless it's "all"
-      if (numQuestionsToSolve !== 'all') {
-        shuffledQuestions = shuffledQuestions.slice(0, parseInt(numQuestionsToSolve));
-      }
-  currentQuestionIndex = 0;
-  score = 0;
-  userChoices = []; // Reset user choices
-
-  //totalTime = shuffledQuestions.length * 15; // Total quiz time (15 seconds per question)
- // startTimer(totalTime);
-
-  setNextQuestion();
+    // Validate the start and end question range
+    if (start >= 0 && end <= totalQuestions && start < end) {
+        shuffledQuestions = questions.slice(start, end); // Set questions to the selected range
+        currentQuestionIndex = 0; // Start from the beginning of the selected range
+        document.getElementById('password-container').classList.add('hide'); // Hide the password container
+        questionContainerElement.classList.remove('hide'); // Show the question container
+        setNextQuestion(); // Start the quiz
+    } else if (end > totalQuestions) {
+        alert(`End question number exceeds the total available questions (${totalQuestions}). Please enter a valid range.`);
+    } else {
+        alert("Please enter a valid question range.");
+    }
 });
 
 function setNextQuestion() {
   resetState();
   showQuestion(shuffledQuestions[currentQuestionIndex]);
+    
+    clearHighlighting(); // Clear any previous highlighting
 
   // Check if it's the last question and update the "Next" button to say "Finish"
   if (currentQuestionIndex === shuffledQuestions.length - 1) {
@@ -5017,6 +5060,9 @@ function setNextQuestion() {
     const progressPercentage = ((currentQuestionIndex + 1) / shuffledQuestions.length) * 100;
     progressBar.style.width = `${progressPercentage}%`;
     progressText.innerText = `Question ${currentQuestionIndex + 1} of ${shuffledQuestions.length} (${progressPercentage.toFixed(0)}%)`;
+    
+    // Apply correct answer highlighting if enabled
+       highlightCorrectAnswer();
 }
 
 function showQuestion(question) {
@@ -5032,6 +5078,11 @@ function showQuestion(question) {
     const button = document.createElement('button');
     button.innerText = answer.text;
     button.classList.add('btn');
+      
+      if (answer.correct) {
+                  button.classList.add('correct');  // Highlight correct answer in green
+              }
+      
     if (answer.correct) {
       button.dataset.correct = answer.correct;
     }

@@ -114,7 +114,7 @@ button {
 
 .correct {
   background-color: lightgreen;
-  color: white;
+  color: black;
 }
 
 .wrong {
@@ -274,4 +274,42 @@ input, button {
   font-size: 16px;
   border: 1px solid black;
   border-radius: 5px;
+}
+
+.next-btn {
+  background-color: magenta; /* Set background color to magenta */
+  color: black; /* Set text color to black */
+  padding: 10px;
+  font-size: 16px;
+  border-radius: 5px;
+  width: 100%;
+  text-align: center;
+  transition: background-color 0.3s ease, color 0.3s ease; /* Smooth transition */
+}
+
+.next-btn:hover {
+  background-color: darkmagenta; /* Optional: Darken the magenta on hover */
+  color: white; /* Optional: Change text color to white on hover */
+}
+#range-container {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 10px;
+}
+
+#range-container label {
+  font-size: 14px;
+  margin-right: 5px;
+}
+
+#start-question, #end-question {
+  width: 45%;
+  padding: 5px;
+  font-size: 14px;
+  border: 1px solid black;
+  border-radius: 5px;
+}
+.correct {
+  background-color: lightgreen;
+  color: black;
 }
